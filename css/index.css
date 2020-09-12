@@ -16,6 +16,8 @@ body{
 	bottom: 0;
 	right: 0;
 	min-width: 200px;
+/* 	filter: saturate(0);
+    	-webkit-filter: grayscale(100%); */
 }
 .ganto_cn{
 	width: 100%;
