@@ -16,8 +16,12 @@ body{
 	bottom: 0;
 	right: 0;
 	min-width: 200px;
-/* 	filter: saturate(0);
-    	-webkit-filter: grayscale(100%); */
+	overflow-x: hidden;
+}
+.he{
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 .ganto_cn{
 	width: 100%;
@@ -34,7 +38,7 @@ header{
 	text-align: center;
 	padding: 40px 0;
 	position: relative;
-	z-index: 9;
+	z-index: 6;
 }
 header b{
 	display: inline-block;
@@ -64,7 +68,6 @@ section{
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 30px;
-	/* background: linear-gradient(to right, #FC00FF, #00DBDE); */
 }
 section p{
 	text-indent: 2em;
@@ -97,11 +100,73 @@ footer span{
 	color: white;
 	cursor: pointer;
 	border: 1px solid white;
-	transition: all 1s ease;	
+	transition: all 1s ease;
+	font-size: 15px;
 }
 @media (max-width: 500px) {
 	footer span{
 		right: 50%;
 		margin-right: -20px;
 	}
+	header span{
+		right: 50%;
+		margin-right: -20px;
+		top: auto;
+		bottom: -20px;
+		border: 1px solid white;
+	}
+}
+.con{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+	display: none;
+}
+.cons{
+	width: 50%;
+	height: 100%;
+	background-color: #3742fa;
+	position: fixed;
+	left: 100%;
+	top: 0;
+	transition: all 1s ease;
+	z-index: 999;
+	min-width: 200px;
+}
+.cons .span_{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	margin-top: -20px;
+	background-color: #3742fa;
+	border-radius: 50%;
+	line-height: 40px;
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	text-align: center;
+}
+.cons .right_{
+	display: none;
+}
+.cons .left_{
+	display: block;
+}
+.ul_{
+	width: 100%;
+	height: 100%;
+}
+.ul_ p{
+	margin: 4px 0;
+	padding: 10px 0;
+	cursor: pointer;
+	background-color: #1e90ff;
+	position: relative;
+	z-index: 0;
 }
