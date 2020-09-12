@@ -128,7 +128,7 @@ footer span{
 	top: 0;
 	transition: all 1s ease;
 	z-index: 999;
-	min-width: 200px;
+	min-width: 100px;
 }
 .cons .span_{
 	width: 40px;
