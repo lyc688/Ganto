@@ -6,12 +6,12 @@ $(function(){
 		$(".cons .left_").hide();
 		$(".cons .right_").show();
 		$(".con").show();
-		$(".cons").css({"left":"30%"});
+		$(".cons").css({"left":"30%","box-shadow":"-4px 0px 4px rgba(0,0,0,0.5)"});
 	})
 	$(".cons .right_").click(function(){
 		$(".cons .right_").hide();
 		$(".cons .left_").show();
 		$(".con").hide();
-		$(".cons").css({"left":"100%"});
+		$(".cons").css({"left":"100%","box-shadow":"-4px 0px 4px rgba(0,0,0,0)"});
 	})
 })
