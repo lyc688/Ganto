@@ -6,7 +6,7 @@ $(function(){
 		$(".cons .left_").hide();
 		$(".cons .right_").show();
 		$(".con").show();
-		$(".cons").css({"left":"50%"});
+		$(".cons").css({"left":"30%"});
 	})
 	$(".cons .right_").click(function(){
 		$(".cons .right_").hide();
