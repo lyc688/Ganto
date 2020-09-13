@@ -118,6 +118,8 @@ footer span{
 	right: 0;
 	z-index: 99;
 	display: none;
+	backdrop-filter: saturate(150%) blur(4px);
+	-webkit-backdrop-filter: saturate(150%) blur(4px);
 }
 .cons{
 	width: 70%;
