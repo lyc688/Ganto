@@ -8,7 +8,7 @@ $(function(){
 		$(".con").show();
 		$(".cons").css({"left":"30%","box-shadow":"-4px 0px 4px rgba(0,0,0,0.5)"});
 	})
-	$(".cons .right_").click(function(){
+	$(".con,.cons .right_").click(function(){
 		$(".cons .right_").hide();
 		$(".cons .left_").show();
 		$(".con").hide();
