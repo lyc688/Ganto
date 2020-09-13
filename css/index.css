@@ -151,8 +151,36 @@ footer span{
 .cons .right_{
 	display: none;
 }
+.cons .right_ i{
+	animation: right_ 1s infinite ease;
+}
 .cons .left_{
 	display: block;
+}
+.cons .left_ i{
+	animation: left_ 1s infinite ease;
+}
+@keyframes right_{
+	0%{
+		transform: translateX(5px);
+	}
+	50%{
+		transform: translateX(-5px);
+	}
+	100%{
+		transform: translateX(5px);
+	}
+}
+@keyframes left_{
+	0%{
+		transform: translateX(5px);
+	}
+	50%{
+		transform: translateX(-5px);
+	}
+	100%{
+		transform: translateX(5px);
+	}
 }
 .ul_{
 	width: 100%;
