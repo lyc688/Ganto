@@ -132,7 +132,7 @@ footer span{
 	z-index: 999;
 /* 	min-width: 100px; */
 /* 	box-shadow: -4px 0px 4px rgba(0,0,0,0.3); */
-	border-radius: 4px 0 0 4px;
+	border-radius: 8px 0 0 8px;
 }
 .cons .span_{
 	width: 40px;
