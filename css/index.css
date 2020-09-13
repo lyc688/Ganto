@@ -150,6 +150,7 @@ footer span{
 }
 .cons .right_{
 	display: none;
+	box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
 }
 .cons .right_ i{
 	animation: right_ 1s infinite ease;
