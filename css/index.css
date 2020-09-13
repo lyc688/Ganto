@@ -186,6 +186,7 @@ footer span{
 .ul_{
 	width: 100%;
 	height: 100%;
+	overflow: auto;
 }
 .ul_ p{
 	margin: 6px 4px;
