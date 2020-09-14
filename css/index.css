@@ -216,6 +216,7 @@ footer span{
 	border-radius: 4px;
 }
 .ul_ p img{
+	display: inherit;
 	width: 100%;
 	height: auto;
 	border-radius: 4px;
