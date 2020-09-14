@@ -5,18 +5,18 @@
 }
 /* 自定义滚动条 */
 ::-webkit-scrollbar{
-	width 8px
+	width: 8px;
 }
 ::-webkit-scrollbar{
-  height 8px
+	height: 8px;
 }
 ::-webkit-scrollbar-thumb{
 	background: #aaa;
 }
 /* 选中 */
 ::selection{
-  background #2AB2AB
-  color white
+	background: #2AB2AB;
+	color: white;
 }
 a{
 	text-decoration: none;
