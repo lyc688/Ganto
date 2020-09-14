@@ -223,6 +223,7 @@ footer span{
 }
 .ul_ p i{
 	display: block;
+	font-style: normal;
 }
 .ul_ p audio{
     	width: 100%;
