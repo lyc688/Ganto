@@ -1,6 +1,6 @@
 $(function(){
 	$("footer span").click(function(){
-		$("body,html").animate({scrollTop:0});
+		$("body,html").stop().animate({scrollTop:0},300);
 	})
 	$(".cons .left_").click(function(){
 		$(".cons .left_").hide();
