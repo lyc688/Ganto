@@ -218,8 +218,9 @@ footer span{
 .ul_ p img{
 	width: 100%;
 	height: auto;
+	border-radius: 4px;
 }
-.ul_ p audio {
+.ul_ p audio{
     	width: 100%;
 	height: auto;
 }
