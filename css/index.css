@@ -6,12 +6,14 @@
 /* 自定义滚动条 */
 ::-webkit-scrollbar{
 	width: 8px;
+    	background: #eee;
 }
 ::-webkit-scrollbar{
 	height: 8px;
 }
 ::-webkit-scrollbar-thumb{
-	background: #aaa;
+	background: #0fbcf9;
+    	border-radius: 4px;
 }
 /* 选中 */
 ::selection{
