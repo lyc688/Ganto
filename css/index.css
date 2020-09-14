@@ -25,7 +25,6 @@ a{
 	color: white;
 	position: relative;
 	margin: 0 10px;
-	display: inline-block;
 }
 body{
 	position: absolute;
@@ -206,6 +205,9 @@ footer span{
 	width: 100%;
 	height: 100%;
 	overflow: auto;
+}
+.ul_ a{
+	display: inline-block;
 }
 .ul_ p{
 	margin: 8px 10px;
