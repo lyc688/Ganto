@@ -221,6 +221,9 @@ footer span{
 	height: auto;
 	border-radius: 4px;
 }
+.ul_ p i{
+	display: block;
+}
 .ul_ p audio{
     	width: 100%;
 }
