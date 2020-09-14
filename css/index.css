@@ -25,6 +25,7 @@ a{
 	color: white;
 	position: relative;
 	margin: 0 10px;
+	display: inline-block;
 }
 body{
 	position: absolute;
