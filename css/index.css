@@ -210,7 +210,7 @@ footer span{
 	height: 100%;
 	overflow: auto;
 }
-ul_::-webkit-scrollbar{
+.ul_::-webkit-scrollbar{
 	display: none;
 }
 .ul_ a{
