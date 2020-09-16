@@ -181,7 +181,7 @@ footer span{
 	display: block;
 }
 .cons .left_ i{
-	animation: left_ 1s infinite ease;
+/* 	animation: left_ 1s infinite ease; */
 }
 @keyframes right_{
 	0%{
