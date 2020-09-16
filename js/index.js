@@ -4,15 +4,15 @@ $(function(){
 	})
 	$(".cons .left_").click(function(){
 		$("body").css({"overflow":"hidden"});
-		$(".cons .left_").hide();
-		$(".cons .right_").show();
+		$(".cons .left_").fadeOut();
+		$(".cons .right_").fadeIn();
 		$(".con").show();
 		$(".cons").css({"left":"30%","box-shadow":"-4px 0px 4px rgba(0,0,0,0.5)"});
 	})
 	$(".con,.cons .right_").click(function(){
 		$("body").css({"overflow":"auto"});
-		$(".cons .right_").hide();
-		$(".cons .left_").show();
+		$(".cons .right_").fadeOut();
+		$(".cons .left_").fadeIn();
 		$(".con").hide();
 		$(".cons").css({"left":"100%","box-shadow":"-4px 0px 4px rgba(0,0,0,0)"});
 	})
