@@ -180,8 +180,8 @@ footer span{
 .cons .left_{
 	display: block;
 }
-.cons .left_ i{
-/* 	animation: left_ 1s infinite ease; */
+.cons .left_ i:nth-child(2){
+	color: #3742fa;
 }
 @keyframes right_{
 	0%{
