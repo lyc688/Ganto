@@ -180,6 +180,9 @@ footer span{
 	display: none;
 	box-shadow: 4px 0px 4px rgba(0,0,0,0.3);
 }
+.cons .left_ i{
+	animation: left_ 0.5s inherit;
+}
 @keyframes right_{
 	0%{
 		transform: translateX(5px);
