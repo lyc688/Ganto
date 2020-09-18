@@ -147,7 +147,7 @@ footer span{
 	height: 100%;
 	background-color: #3742fa;
 	position: fixed;
-	left: 100%;
+	right: 100%;
 	top: 0;
 	transition: all 0.5s ease;
 	z-index: 999;
@@ -159,7 +159,7 @@ footer span{
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	left: -20px;
+	right: -20px;
 	top: 50%;
 	margin-top: -20px;
 	background-color: #3742fa;
