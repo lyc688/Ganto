@@ -173,12 +173,12 @@ footer span{
 .cons .right_{
 	display: block;
 }
+.cons .right_ i:nth-child(1){
+	color: #3742fa;
+}
 .cons .left_{
 	display: none;
-	box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
-}
-.cons .left_ i:nth-child(1){
-/* 	color: #3742fa; */
+	box-shadow: 4px 0px 4px rgba(0,0,0,0.3);
 }
 @keyframes right_{
 	0%{
