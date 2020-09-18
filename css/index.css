@@ -181,7 +181,7 @@ footer span{
 	box-shadow: 4px 0px 4px rgba(0,0,0,0.3);
 }
 .cons .left_ i{
-	animation: left_ 0.5s inherit;
+	animation: left_ 0.5s infinite ease;
 }
 @keyframes right_{
 	0%{
