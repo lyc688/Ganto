@@ -171,17 +171,14 @@ footer span{
 	text-align: center;
 }
 .cons .right_{
+	display: block;
+}
+.cons .left_{
 	display: none;
 	box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
 }
-.cons .right_ i{
-	animation: right_ 1s infinite ease;
-}
-.cons .left_{
-	display: block;
-}
-.cons .left_ i:nth-child(2){
-	color: #3742fa;
+.cons .left_ i:nth-child(1){
+/* 	color: #3742fa; */
 }
 @keyframes right_{
 	0%{
