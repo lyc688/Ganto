@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	/* filter: grayscale(100%);
+	-webkit-filter: grayscale(100%); */
+}
+body{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #0e0e0e;
+	-moz-user-select:none; /*火狐*/
+	-webkit-user-select:none; /*webkit浏览器*/
+	-ms-user-select:none; /*IE10*/
+	-khtml-user-select:none; /*早期浏览器*/
+	user-select:none;
+	-webkit-touch-callout: none;
+}
+.box{
+	min-height: 100%;
+	position: relative;
+}
+a{
+	display: inline-block;
+	color: #3742FA;
+	font-family: "consolas";
+	box-sizing: border-box;
+}
+a:active{
+	color: red;
+}
+header{
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	border-bottom: 1px solid #333;
+	padding: 30px 0;
+	color: white;
+}
+.name{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 5px;
+}
+.name nav{
+	width: 100%;
+	max-width: 666px;
+}
+.name nav b{
+	font-size: 30px;
+}
+.function{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.function nav{
+	width: 100%;
+	max-width: 666px;
+}
+.function a{
+	text-transform: capitalize;
+	text-decoration: none;
+}
+@media (max-width: 800px) {
+	header{
+		text-align: center;
+	}
+	section{
+		margin-left: 10px;
+	}
+}
+section{
+	color: white;
+	font-family: "consolas";
+	display: flex;
+	justify-content: center;
+	transition: all .3s;
+	position: relative;
+	padding: 30px;
+}
+.cevno{
+	width: 100%;
+	max-width: 666px;
+	font-weight: 100;
+}
+.cevno p{
+	width: 100%;
+	word-break:break-word;
+	position: relative;
+}
+.cevno p::before{
+	content: ">";
+	position: absolute;
+	left: -20px;
+}
