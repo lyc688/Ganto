@@ -1,4 +1,4 @@
-![G](https://cevno.cn/img/favicon.ico)
+![G](https://ganto.cn/g.png)
 # Ganto | ganto.cn
 ```js
 function g(){
