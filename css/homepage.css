@@ -20,10 +20,11 @@ body{
 .box{
 	min-height: 100%;
 	position: relative;
-	background: url(https://ganto.cn/i/img/blue-gradients.020-wh.jpg);
+	background: #0B0B61;
+	/* background: url(https://ganto.cn/i/img/blue-gradients.020-wh.jpg);
     	background-position: center;
     	background-size: cover;
-    	background-repeat: no-repeat;
+    	background-repeat: no-repeat; */
 }
 a{
 	display: inline-block;
