@@ -10,7 +10,7 @@ body{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: #0e0e0e;
+	background: url(https://ganto.cn/i/img/blue-gradients.020-wh.jpg);
 	-moz-user-select:none; /*火狐*/
 	-webkit-user-select:none; /*webkit浏览器*/
 	-ms-user-select:none; /*IE10*/
