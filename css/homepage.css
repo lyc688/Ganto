@@ -95,5 +95,5 @@ section{
 .cevno p::before{
 	content: "#";
 	position: absolute;
-	left: -20px;
+	left: -15px;
 }
