@@ -37,7 +37,7 @@ a:active{
 header{
 	position: relative;
 	bottom: 0;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid black;
 	padding: 30px 0;
 	margin: 0 20px;
 }
