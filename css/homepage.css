@@ -4,6 +4,10 @@
 	/* filter: grayscale(100%);
 	-webkit-filter: grayscale(100%); */
 }
+::selection{
+	color: white;
+	background-color: black;
+}
 body{
 	position: absolute;
 	top: 0;
