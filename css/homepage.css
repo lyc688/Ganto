@@ -87,7 +87,7 @@ section{
 	justify-content: center;
 	transition: all .3s;
 	position: relative;
-	padding: 30px 40px;
+	margin: 30px 40px;
 }
 .cevno{
 	width: 100%;
