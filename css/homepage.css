@@ -59,6 +59,7 @@ header{
 .name nav b{
 	font-size: 50px;
 	letter-spacing: 5px;
+	text-shadow: 3px 3px 3px black;
 }
 .function{
 	width: 100%;
