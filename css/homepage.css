@@ -29,7 +29,8 @@ body{
 .box{
 	min-height: 100%;
 	position: relative;
-    	font-family: "宋体";
+/*     	font-family: "宋体"; */
+	font-family: Georgia,Times New Roman,Times,serif;
 	/* background: url(https://ganto.cn/i/img/blue-gradients.020-wh.jpg);
     	background-position: center;
     	background-size: cover;
