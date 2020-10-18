@@ -29,9 +29,7 @@ body{
 .box{
 	min-height: 100%;
 	position: relative;
-/*     	font-family: "宋体"; */
-	font-family: Georgia,Times New Roman,Times,serif;
-	font-size: 20px;
+    	font-family: "宋体";
 	/* background: url(https://ganto.cn/i/img/blue-gradients.020-wh.jpg);
     	background-position: center;
     	background-size: cover;
@@ -75,7 +73,6 @@ header{
 .function nav{
 	width: 100%;
 	max-width: 666px;
-	font-size: 25px;
 }
 .function a{
 	text-transform: capitalize;
