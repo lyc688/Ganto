@@ -118,7 +118,7 @@ section{
 	word-break:break-word;
 	position: relative;
 	line-height: 1.5rem;
-	padding: 3px 0;
+	margin: 8px 0;
 }
 /* .cevno p::before{
 	content: "#";
