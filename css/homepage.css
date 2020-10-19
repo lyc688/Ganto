@@ -140,7 +140,10 @@ section{
 	height: 400px;
 }
 .cevno .imgs img {
-    width: 100%;
+ 	width: 100%;
+}
+.cevno .videos,.cevno .imgs{
+    	margin: 12px 0;
 }
 @media (max-width: 666px) {
 	.cevno .videos iframe{
