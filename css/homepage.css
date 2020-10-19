@@ -146,8 +146,9 @@ section{
 }
 .cevno .videos,.cevno .imgs{
     	margin: 12px 0;
+}
+.cevno .videos iframe,.cevno .videos video,.cevno .imgs img{
 	border-radius: 10px;
-    	overflow: hidden;
 }
 @media (max-width: 666px) {
 	.cevno .videos iframe{
