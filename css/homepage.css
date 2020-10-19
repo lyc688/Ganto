@@ -143,6 +143,7 @@ section{
  	width: 100%;
 }
 .cevno .videos,.cevno .imgs{
+    	display: block;
     	margin: 12px 0;
 	border-radius: 10px;
     	overflow: hidden;
