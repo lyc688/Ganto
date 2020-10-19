@@ -140,25 +140,25 @@ section{
 	border-radius: 4px;
 }
 @media (max-width: 666px) {
-	.cevno .video iframe{
+	.cevno .videos iframe{
 		width: 100%;
 		height: 300px;
 	}
 }
 @media (max-width: 520px) {
-	.cevno .video iframe{
+	.cevno .videos iframe{
 		width: 100%;
 		height: 200px;
 	}
 }
 @media (max-width: 400px) {
-	.cevno .video iframe{
+	.cevno .videos iframe{
 		width: 100%;
 		height: 150px;
 	}
 }
 @media (max-width: 240px) {
-	.cevno .video iframe{
+	.cevno .videos iframe{
 		width: 100%;
 		height: 100px;
 	}
