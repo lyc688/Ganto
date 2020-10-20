@@ -150,6 +150,10 @@ section{
 .cevno .videos iframe,.cevno .videos video,.cevno .imgs img{
 	border-radius: 10px;
 }
+.cevno .musics {
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 666px) {
 	.cevno .videos iframe{
 		width: 100%;
