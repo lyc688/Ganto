@@ -168,6 +168,11 @@ section{
 		height: 150px;
 	}
 }
+@media (max-width: 310px) {
+	.musics iframe {
+    		width: 100%;
+	}
+}
 @media (max-width: 240px) {
 	.cevno .videos iframe{
 		width: 100%;
