@@ -10,6 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="css/homepage.css">
 	</head>
 	<body>
+		<script src='//cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js'></script>
+		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 		<script src="js/homepage.js" type="text/javascript" charset="utf-8"></script>
 
 		<div class="box">
@@ -54,6 +56,20 @@
 					<p style="text-align: center;">ᥬ</p>
 					<p style="text-align: center;">😳</p>
 					<p style="text-align: center;">᭄</p> -->
+					<div class="comment"></div>
+					<script>
+						new Valine({
+							av: AV,
+							el: '.comment', // 
+							app_id: 'aepSK01JH6MBBnycMOyG8esk-MdYXbMMI',
+							app_key: 'r6fIpym2WjgJ67oqJY4Xb4t0',
+							placeholder: '畅所欲言',
+							avatar: 'mp',
+							master: '7f7afd027d62c0637c784c800da39f98',
+							tagMeta: ["博主","小伙伴","访客"],
+							friends:  ["xxxx0","xxxx1"],
+						})
+					</script>
 				</div>
 			</section>
 			<footer>
