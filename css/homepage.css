@@ -167,8 +167,6 @@ section{
 		width: 100%;
 		height: 150px;
 	}
-}
-@media (max-width: 310px) {
 	.musics iframe {
     		width: 100%;
 	}
