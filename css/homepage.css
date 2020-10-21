@@ -205,3 +205,11 @@ span.vnick,a.vnick {
 	border: 2px solid #e0e0e0;
 	padding: 0px 5px;
 }
+/*评论外框样式*/
+.vwrap{
+    	border: 1px solid #000;
+}
+/*输入框样式*/
+.vwrap .vheader .vinput{
+    	border-bottom: 1px solid #eee;
+}
