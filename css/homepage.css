@@ -125,7 +125,7 @@ section{
 	position: absolute;
 	left: -15px;
 } */
-.cevno i{
+.cevno>i{
 	display: inline-block;
 	font-style: normal;
 	font-size: 20px;
