@@ -186,3 +186,16 @@ footer {
     	justify-content: center;
 	padding: 35px;
 }
+/*评论系统输入框背景图设置*/
+#veditor {
+	background-image: url(https://cdn.jsdelivr.net/gh/DIYsay/Blog_CDN_2/imgs/diysay-valine.webp);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: rgba(255, 255, 255, 0);
+	resize: vertical
+}
+#veditor:focus{
+	background-position-y: 200px;
+	transition: all 0.2s ease-in-out 0s;
+}
