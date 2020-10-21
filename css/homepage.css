@@ -199,3 +199,9 @@ footer {
 	background-position-y: 200px;
 	transition: all 0.2s ease-in-out 0s;
 }
+/*评论系统昵称样式*/
+.vnick {
+	border-radius: 13px 13px 13px 0;
+	border: 2px solid #333;
+	padding: 0px 5px;
+}
