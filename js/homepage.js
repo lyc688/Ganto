@@ -1,9 +1,9 @@
 console.log("%c   ____  \n" +
-						"  / ___\\ \n"+
-						" / /   __  \n"+
-						"/ /____\\ \\  \n"+
-						"\\________/ https://ganto.cn","color: #3742FA;"
-			);
+	"  / ___\\ \n"+
+	" / /   __  \n"+
+	"/ /____\\ \\  \n"+
+	"\\________/ https://ganto.cn","color: #3742FA;"
+);
 
 var _hmt = _hmt || [];
 (function() {
