@@ -184,5 +184,5 @@ section{
 footer {
     	display: flex;
     	justify-content: center;
-	margin: 35px;
+	padding: 35px;
 }
