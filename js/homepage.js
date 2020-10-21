@@ -1,4 +1,10 @@
-console.log("%c Ganto的个人主页 https://ganto.cn","background: #0e0e0e;color: white;padding: 10px;border-radius: 4px;");
+console.log("%c   ____  \n" +
+						"  / ___\\ \n"+
+						" / /   __  \n"+
+						"/ /____\\ \\  \n"+
+						"\\________/ https://ganto.cn","color: #3742FA;"
+			);
+
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
