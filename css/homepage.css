@@ -187,9 +187,9 @@ footer {
 	padding: 35px;
 }
 /*覆盖表情包默认大小*/
-.v[data-class=v] .vwrap .vemojis i{
+.vwrap .vemojis i{
     	width: 52px;
 }
-.v[data-class=v] .emoji, .v[data-class=v] .vemoji{
+.emoji,.vemoji{
     	max-width: 45px;
 }
