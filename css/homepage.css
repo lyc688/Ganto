@@ -186,6 +186,10 @@ footer {
     	justify-content: center;
 	padding: 35px;
 }
+/*评论系统全部字体font-weight: 500;*/
+.comment{
+	font-weight: 400;
+}
 /*评论系统输入框背景图设置*/
 #veditor {
 	background-image: url(https://cdn.jsdelivr.net/gh/DIYsay/Blog_CDN_2/imgs/diysay-valine.webp);
