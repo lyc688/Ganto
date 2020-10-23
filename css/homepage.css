@@ -182,9 +182,14 @@ section{
 	}
 }
 footer {
-    	display: flex;
-    	justify-content: center;
 	padding: 35px;
+	text-align: center;
+}
+footer div{
+	margin: 2px;
+}
+footer .tim{
+	font-size: 12px;
 }
 /*评论系统全部字体font-weight: 500;*/
 .comment{
