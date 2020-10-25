@@ -94,7 +94,7 @@ header{
 	display: block;
 	width: 72px;
 	height: 72px;
-	background-image: url(img/sn.png);
+	background-image: url(../img/sn.png);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	-webkit-animation: 4s steps(30) infinite w_logo;
