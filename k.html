@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>今日课程</title>
+		<style type="text/css">
+			.vb{
+				text-align: center;
+			}
+			.timer{
+				display: flex;
+				justify-content: center;
+			}
+			.timer p{
+				text-align: center;
+			}
+			b{
+				font-size: 20px;
+				color: red;
+			}
+			ol{
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+					var oe = 0;
+					var text = "";
+					var setTime = new Date("2020-09-07 00:00:00").getTime();
+					var nowTime = new Date().getTime();
+					// var hour = new Date().getHours();
+					// var minute = new Date().getMinutes();
+					// var second = new Date().getSeconds();
+					var week = new Date().getDay();
+					var myDate = nowTime - setTime;
+					var days = Math.floor(myDate / (24*3600*1000)) // 计算出相差天数
+					var oneWeek = Math.floor(days / 7)+1;
+					var ss = oneWeek % 2;
+					if(ss == 0){
+						oe = 2;
+						text = "双";
+					}else{
+						oe = 1;
+						text = "单";
+					}
+					$(".vb").append("本周为第<b>" + oneWeek + "</b>周，<b>" + text + "</b>周");
+					
+					var str = [
+						{
+							"name":"电磁场与电磁波",//课名
+							"js":"教7-533",//教室
+							"time":"08:00",//上课时间
+							"oe":"1",//单双周：0=不分单双、1=单周、2=双周
+							"week":"1",//周几的课 0=周日、1-6分别对应周一到周六
+						},
+						{
+							"name":"信息与系统",
+							"js":"教7-218",
+							"time":"10:10",
+							"oe":"0",
+							"week":"1",
+						},
+						{
+							"name":"嵌入式系统原理及应用",
+							"js":"教3-208",
+							"time":"14:30",
+							"oe":"0",
+							"week":"1",
+						},
+						{
+							"name":"大学英语",
+							"js":"教7-304",
+							"time":"16:40",
+							"oe":"2",
+							"week":"1",
+						},
+						{
+							"name":"大学物理",
+							"js":"教7-351",
+							"time":"14:30",
+							"oe":"0",
+							"week":"2",
+						},
+						{
+							"name":"中国近现代史纲要",
+							"js":"教7-214",
+							"time":"16:40",
+							"oe":"2",
+							"week":"2",
+						},
+						{
+							"name":"嵌入式系统原理及应用",
+							"js":"教3-208",
+							"time":"10:10",
+							"oe":"1",
+							"week":"3",
+						},
+						{
+							"name":"信号与系统",
+							"js":"教7-511",
+							"time":"16:40",
+							"oe":"0",
+							"week":"3",
+						},
+						{
+							"name":"电磁场与电磁波",
+							"js":"教7-533",
+							"time":"10:10",
+							"oe":"0",
+							"week":"4",
+						},
+						{
+							"name":"大学英语",
+							"js":"教7-312",
+							"time":"10:10",
+							"oe":"0",
+							"week":"5",
+						},
+						{
+							"name":"中国近现代史纲要",
+							"js":"教7-444",
+							"time":"16:40",
+							"oe":"2",
+							"week":"5",
+						},
+					]
+					
+					
+					// var str = [
+					// 	{
+					// 		"name":"管理会计",//课名
+					// 		"js":"商03-209",//教室
+					// 		"time":"10:10",//上课时间
+					// 		"week":"1",//周几的课 0=周日、1-6分别对应周一到周六
+					// 	},
+					// 	{
+					// 		"name":"会计手工综合模拟实训",
+					// 		"js":"商实03-519",
+					// 		"time":"14:30",
+					// 		"week":"1",
+					// 	},
+					// 	{
+					// 		"name":"会计手工综合模拟实训",
+					// 		"js":"商实03-519",
+					// 		"time":"16:40",
+					// 		"week":"1",
+					// 	},
+					// 	{
+					// 		"name":"财政学",
+					// 		"js":"商03-308",
+					// 		"time":"10:10",
+					// 		"week":"2",
+					// 	},
+					// 	{
+					// 		"name":"市场营销学",
+					// 		"js":"商03-114",
+					// 		"time":"14:30",
+					// 		"week":"2",
+					// 	},
+					// 	{
+					// 		"name":"税法与税务会计",
+					// 		"js":"商03-209",
+					// 		"time":"16:40",
+					// 		"week":"2",
+					// 	},
+					// 	{
+					// 		"name":"初级会计资格辅导",
+					// 		"js":"教3-208",
+					// 		"time":"8:00",
+					// 		"week":"3",
+					// 	},
+					// 	{
+					// 		"name":"管理会计",
+					// 		"js":"商03-309",
+					// 		"time":"10:10",
+					// 		"week":"3",
+					// 	},
+					// 	{
+					// 		"name":"税法与税务会计",
+					// 		"js":"商03-209",
+					// 		"time":"14:30",
+					// 		"week":"3",
+					// 	},
+					// 	{
+					// 		"name":"成本会计",
+					// 		"js":"商03-208",
+					// 		"time":"8:00",
+					// 		"week":"4",
+					// 	},
+					// 	{
+					// 		"name":"初级会计资格辅导",
+					// 		"js":"教3-508",
+					// 		"time":"8:00",
+					// 		"week":"5",
+					// 	},
+					// 	{
+					// 		"name":"市场营销学",
+					// 		"js":"商03-114",
+					// 		"time":"10:10",
+					// 		"week":"5",
+					// 	},
+					// ]
+					
+					
+					for(var i = 0; i < str.length; i++){
+						if(str[i].oe == oe || str[i].oe == 0){
+							if(str[i].week == week){
+								$(".timer ol").append("<li><b>"+ str[i].name + "</b>：<b>" + str[i].js + "</b>、<b>" + str[i].time +"</b></li>");
+							}
+						}
+					}
+					
+					// for(var i = 0; i < str.length; i++){
+					// 	if(str[i].week == week){
+					// 		$(".timer ol").append("<li><b>"+ str[i].name + "</b>：<b>" + str[i].js + "</b>、<b>" + str[i].time +"</b></li>");
+					// 	}
+					// }
+					
+			})
+		</script>
+		<div class="vb">
+			<span></span>
+		</div>
+		<div class="timer">
+			<nav>
+				<p>今日课程有：</p>
+				<ol></ol>
+			</nav>
+		</div>
+	</body>
+</html>
