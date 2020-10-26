@@ -14,7 +14,7 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 
-document.querySelector(".demo").onclick=function(){
+document.querySelector(".demo span").onclick=function(){
 window.open("https://live.bilibili.com/6");
 }
 }
