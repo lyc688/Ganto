@@ -14,5 +14,5 @@ var _hmt = _hmt || [];
 })();
 
 $(".demo span").click(function(){
-windows.open("https://live.bilibili.com/6");
+window.open("https://live.bilibili.com/6");
 })
