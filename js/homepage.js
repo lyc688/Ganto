@@ -13,6 +13,6 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 
-$(".demo span").click(function(){
+document.querySelector(".demo span").onclick=function(){
 window.open("https://live.bilibili.com/6");
-})
+}
