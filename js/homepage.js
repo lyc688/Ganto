@@ -12,3 +12,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+
+$(".demo span").click(function(){
+windows.open("https://live.bilibili.com/6");
+})
