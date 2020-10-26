@@ -1,3 +1,4 @@
+window.onload = function(){
 console.log("%c   ____  \n" +
 	"  / ___\\ \n"+
 	" / /   __  \n"+
@@ -14,6 +15,6 @@ var _hmt = _hmt || [];
 })();
 
 document.querySelector(".demo").onclick=function(){
-alert(1);
 window.open("https://live.bilibili.com/6");
+}
 }
