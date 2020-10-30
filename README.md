@@ -3,5 +3,4 @@
 function g(){
   console.log("https://ganto.cn");
 };
-g();
 ```
