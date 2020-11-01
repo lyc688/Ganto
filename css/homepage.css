@@ -97,8 +97,8 @@ header{
 	background-image: url(../img/lt.png);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
-	-webkit-animation: 4s steps(13) infinite w_logo;
-	animation: 4s steps(13) infinite w_logo;
+	-webkit-animation: 1.5s steps(13) infinite w_logo;
+	animation: 1.5s steps(13) infinite w_logo;
 }
 @-webkit-keyframes w_logo {
 	0% {
