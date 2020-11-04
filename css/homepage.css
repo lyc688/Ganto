@@ -26,7 +26,7 @@ body{
 	/*user-select:none;*/
 	/*-webkit-touch-callout: none;*/
 }
-.box{
+main{
 	min-height: 100%;
 	position: relative;
  	font-weight: 300;
