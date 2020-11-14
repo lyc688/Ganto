@@ -10,7 +10,7 @@ $(function(){
 		$("header").css("position","absolute");
 		$("footer").css("position","absolute");
 	});
-	$(".m_l span").click(function(){
+	$(".m_l>span").click(function(){
 		var m_l_w = $(".m_l").width();
 		$(".m_r").animate({left:0},500);
 		$(".m_l").animate({left:-(m_l_w)},500);
