@@ -33,10 +33,10 @@ body{
 .m_l nav{
 	width: 100%;
 	max-width: 500px;
-	height: 200px;
+	height: 150px;
 	background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605346466699&di=427aca7bd22ff88a917b5957997e9db1&imgtype=0&src=http%3A%2F%2Fgss0.baidu.com%2F-fo3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3De116028ad700baa1ba794fbf72209524%2F00e93901213fb80e05c7aeb130d12f2eb9389446.jpg);
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 }
@@ -50,7 +50,40 @@ body{
 	top: 0;
 	left: 0;
 }
-.m_l span{
+.m_l nav .cont{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	z-index: 0;
+	display: flex;
+}
+.m_l nav .cont span{
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: url(https://ganto.cn/img/mht.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+.m_l nav .cont .na{
+	margin-left: 10px;
+	color: white;
+}
+.m_l nav .cont .na p:nth-child(1){
+	font-size: 16px;
+}
+.m_l nav .cont .na p:nth-child(2){
+	font-size: 16px;
+}
+.m_l nav .cont .na p:nth-child(3){
+	font-size: 14px;
+	font-weight: 300;
+}
+.m_l>span{
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -60,6 +93,11 @@ body{
 	right: 0;
 	top: 0;
 	color: white;
+	cursor: pointer;
+}
+.m_l>p{
+	margin: 20px;
+	text-indent: 20px;
 }
 .m_r{
 	width: 100%;
@@ -71,7 +109,7 @@ body{
 header{
 	width: 100%;
 	max-width: 500px;
-	height: 60px;
+	height: 50px;
 	background: -webkit-linear-gradient(left,#01D9FF,#01A7FF);
 	background-color: #999999;
 	display: flex;
@@ -86,8 +124,8 @@ header .left,header .right{
 	align-items: center;
 }
 header .left .logo{
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	background-color: red;
 	border-radius: 50%;
 	margin: 0 14px;
@@ -100,12 +138,11 @@ header .left .name{
 	margin-top: 5px;
 }
 header .left .name .n{
-	font-size: 18px;
+	font-size: 16px;
 }
 header .left .name .z{
 	font-size: 12px;
 	font-weight: 300;
-	margin-top: 2px;
 }
 header .left .name .z::before{
 	display: inline-block;
@@ -130,7 +167,7 @@ section::before,section::after{
 	display: block;
 	content: "";
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	
 }
 section{
@@ -230,7 +267,7 @@ section .items i{
 footer{
 	width: 100%;
 	max-width: 500px;
-	height: 60px;
+	height: 50px;
 	background-color: #999999;
 	position: fixed;
 	bottom: 0;
