@@ -264,7 +264,7 @@ section .items b{
 section .items i{
 	font-size: 14px;
 	font-weight: 300;
-	
+	color: #999;
 }
 footer{
 	width: 100%;
