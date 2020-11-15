@@ -83,6 +83,9 @@ body{
 	font-size: 14px;
 	font-weight: 300;
 }
+.m_l nav .cont .na p:nth-child(3) a{
+	color: white;
+}
 .m_l>span{
 	display: inline-block;
 	width: 50px;
