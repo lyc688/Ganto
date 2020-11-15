@@ -111,7 +111,6 @@ header{
 	max-width: 500px;
 	height: 50px;
 	background: -webkit-linear-gradient(left,#01D9FF,#01A7FF);
-	background-color: #999999;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -173,7 +172,7 @@ section::before,section::after{
 section{
 	min-height: 100%;
 	max-height: 100%;
-	background-color: #eee;
+	background-color: #F4F6FA;
 	overflow: auto;
 }
 section .search{
@@ -184,7 +183,7 @@ section .search{
 section .search input{
 	width: 90%;
 	height: 38px;
-	background-color: #eee;
+	background-color: #F4F6FA;
 	border: 0;
 	border-radius: 19px;
 	margin: 10px 0;
@@ -199,6 +198,9 @@ section .item{
 	align-items: center;
 	background-color: white;
 	padding: 0 10px;
+}
+section .item:hover{
+	background-color: #F4F6FA;
 }
 section .item nav{
 	display: flex;
@@ -268,7 +270,6 @@ footer{
 	width: 100%;
 	max-width: 500px;
 	height: 50px;
-	background-color: #999999;
 	position: fixed;
 	bottom: 0;
 	background: rgba(255,255,255,.5);
