@@ -233,7 +233,7 @@ footer .tim{
 }
 /*评论系统昵称样式*/
 span.vnick,a.vnick {
-	border-radius: 0px 13px 13px 13px;
+	border-radius: 13px;
 	border: 2px solid #e0e0e0;
 	padding: 0px 5px;
 }
