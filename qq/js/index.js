@@ -1,4 +1,5 @@
 $(function(){
+	document.documentElement.requestFullscreen();//全屏
 	$("footer ul li").click(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		$(this).removeClass("unactive").siblings().addClass("unactive");
@@ -20,5 +21,3 @@ $(function(){
 		},500);
 	})
 })
-document.documentElement.requestFullscreen();//全屏
-//document.cancelFullScreen();//非全屏
