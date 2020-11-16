@@ -113,7 +113,7 @@ header{
 	width: 100%;
 	max-width: 500px;
 	height: 50px;
-	background: -webkit-linear-gradient(left,#01D9FF,#01CFFF,#01C7FF,#01C3FF,#01BBFE,#01BAFF,#00B3FE,#00ADFE,#00A7FE,#01A7FF);
+	background: -webkit-linear-gradient(left,#01D9FF,#01CFFF,#01C7FF,#01C3FF,#01BBFE,#01BAFF,#00B6FE,#00B3FE,#00ADFE,#00A7FE,#01A7FF);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
