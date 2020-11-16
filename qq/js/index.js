@@ -1,5 +1,7 @@
 $(function(){
-	document.documentElement.requestFullscreen();//全屏
+	$(".push").click(function(){
+		document.documentElement.requestFullscreen();//全屏
+	})
 	$("footer ul li").click(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		$(this).removeClass("unactive").siblings().addClass("unactive");
