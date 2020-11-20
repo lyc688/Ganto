@@ -112,12 +112,10 @@ section .i0{
 	width: 80%;
 	margin: 0 auto;
 	padding-bottom: 50px;
+font-size: 18px;
 }
 .txt>p{
 	padding: 10px 0;
-}
-.txt>p>span{
-	font-weight: 900;
 }
 .txt>p>i{
 	display: inline-block;
