@@ -24,14 +24,17 @@ header{
 }
 header i{
 	display: inline-block;
-	width: 50px;
+	width: 60px;
+    	height: 60px;
 	text-align: center;
 	position: absolute;
 	left: 0;
-	font-family: 幼圆;
-	font-style: normal;
-	font-weight: 900;
-	font-size: 25px;
+}
+header i svg{
+	width: 50%;
+    	height: 50%;
+	position: relative;
+    	top: 5px;
 }
 header span{
 	display: inline-block;
