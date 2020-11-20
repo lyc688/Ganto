@@ -122,6 +122,7 @@ font-size: 17px;
 	font-style: normal;
 	color: #6E6E6E;
 	min-width: 100px;
+text-indent: 20px;
 }
 .txt>p:nth-child(5)>i{
 	display: initial;
