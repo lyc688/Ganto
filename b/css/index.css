@@ -99,13 +99,13 @@ section .i0{
 	text-align: center;
 }
 .i1>p:nth-child(2){
-	font-size: 30px;
+	font-size: 25px;
 	color: var(--section-h-b_c);
 }
 .i1>p:nth-child(3){
 	height: 50px;
 	line-height: 40px;
-	font-size: 16px;
+	font-size: 15px;
 	color: var(--section-h-b_c);
 }
 .txt{
