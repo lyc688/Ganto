@@ -117,6 +117,9 @@ section .i0{
 	font-weight: 900;
 }
 .txt>p>i{
+	display: inline-block;
 	font-style: normal;
 	color: #6E6E6E;
+	border: 1px solid red;
+	min-width: 100px;
 }
