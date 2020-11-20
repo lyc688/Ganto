@@ -113,10 +113,10 @@ section .i0{
 	margin: 0 auto;
 	padding-bottom: 50px;
 font-size: 17px;
-letter-spacing: 5px;
 }
 .txt>p{
 	padding: 10px 0;
+line-height: 10px;
 }
 .txt>p>i{
 	display: inline-block;
