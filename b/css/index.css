@@ -55,7 +55,7 @@ section .i0{
 	overflow: hidden;
 }
 .i0::before{
-	display: block;
+    	display: block;
 	content: "";
 	width: 1000px;
 	height: 1000px;
@@ -63,7 +63,7 @@ section .i0{
 	background: white;
 	position: absolute;
 	top: 120px;
-	left: -270px;
+	left: -325px;
 }
 .i0 p{
 	height: 60px;
@@ -75,22 +75,22 @@ section .i0{
 	margin-top: 60px;
 }
 .i1::after{
-	    display: block;
+   	display: block;
 	content: "";
-	width: 130px;
-	height: 175px;
+	width: 100px;
+	height: 140px;
 	background: url(../img/r.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	position: absolute;
-	top: -181px;
+	top: -120px;
 	left: 50%;
-	margin-left: -65px;
+	margin-left: -50px;
 }
 .ooo{
 	width: 100%;
-	height: 10px;
+	height: 30px;
 }
 .i1>p{
 	text-align: center;
