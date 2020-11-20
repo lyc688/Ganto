@@ -16,16 +16,16 @@ main{
 }
 header{
 	width: 100%;
-	height: 65px;
+	height: 55px;
 	background-color: var(--header-b_c);
 	color: white;
 	position: relative;
-	line-height: 65px;
+	line-height: 55px;
 }
 header i{
 	display: inline-block;
-	width: 60px;
-    	height: 60px;
+	width: 55px;
+    	height: 55px;
 	text-align: center;
 	position: absolute;
 	left: 0;
