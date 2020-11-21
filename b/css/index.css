@@ -118,12 +118,7 @@ font-size: 17px;
 	padding: 10px 0;
 }
 .txt>p>i{
-	display: inline-block;
 	font-style: normal;
 	color: #6E6E6E;
-	min-width: 100px;
-margin-left: 10px;
-}
-.txt>p:nth-child(5)>i{
-	display: initial;
+padding-left: 10px;
 }
