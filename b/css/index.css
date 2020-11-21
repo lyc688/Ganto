@@ -112,7 +112,7 @@ section .i0{
 	width: 80%;
 	margin: 0 auto;
 	padding-bottom: 40px;
-font-size: 17px;
+	font-size: 17px;
 }
 .txt>p{
 	padding: 10px 0;
@@ -120,5 +120,5 @@ font-size: 17px;
 .txt>p>i{
 	font-style: normal;
 	color: #6E6E6E;
-padding-left: 10px;
+	padding-left: 15px;
 }
