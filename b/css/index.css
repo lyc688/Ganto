@@ -103,7 +103,7 @@ section .i0{
 	color: var(--section-h-b_c);
 }
 .i1>p:nth-child(3){
-	height: 50px;
+	height: 40px;
 	line-height: 40px;
 	font-size: 15px;
 	color: var(--section-h-b_c);
