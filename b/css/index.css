@@ -111,7 +111,7 @@ section .i0{
 .txt{
 	width: 80%;
 	margin: 0 auto;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 font-size: 17px;
 }
 .txt>p{
