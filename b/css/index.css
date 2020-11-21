@@ -120,5 +120,5 @@ section .i0{
 .txt>p>i{
 	font-style: normal;
 	color: #6E6E6E;
-	padding-left: 15px;
+/* 	padding-left: 15px; */
 }
