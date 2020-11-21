@@ -101,6 +101,7 @@ section .i0{
 .i1>p:nth-child(2){
 	font-size: 25px;
 	color: var(--section-h-b_c);
+margin-top: 5px;
 }
 .i1>p:nth-child(3){
 	height: 40px;
