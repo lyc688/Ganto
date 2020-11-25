@@ -46,9 +46,13 @@ a:active{
 header{
 	position: relative;
 	bottom: 0;
-	border-bottom: 1px solid #c9c9c9;
 	padding-top: 30px;
-	margin: 0 40px;
+}
+header::after{
+content: "";
+display: block;
+border-bottom: 1px solid #c9c9c9;
+margin: 0 40px;
 }
 .name{
 	width: 100%;
