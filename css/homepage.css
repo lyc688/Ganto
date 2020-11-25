@@ -49,10 +49,12 @@ header{
 	padding-top: 30px;
 }
 header::after{
-content: "";
-display: block;
-border-bottom: 1px solid #c9c9c9;
-margin: 0 40px;
+	content: "";
+	display: block;
+	width: 100%;
+	max-width: 666px;
+	border-bottom: 1px solid #c9c9c9;
+	margin: 0 auto;
 }
 .name{
 	width: 100%;
