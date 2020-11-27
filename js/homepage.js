@@ -48,7 +48,6 @@ $(function(){
 	function panduan(){
 		night = getCookie("night");
 		if(night === "0"){ // 白天模式的样式
-			console.log("night=0;白天");
 			$("body").css({"background":"","color":""});
 			for(var i = 0; i < 4; i++){
 				var a_c = $(".function nav a").eq(i).css("color");
@@ -57,7 +56,6 @@ $(function(){
 				}
 			}
 		}else if(night === "1"){ // 夜间模式的样式
-			console.log("night=1;黑夜");
 			$("body").css({"background":"#2f3640","color":"white"});
 			for(var i = 0; i < 4; i++){
 				var a_c = $(".function nav a").eq(i).css("color");
