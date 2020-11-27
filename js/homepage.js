@@ -56,7 +56,7 @@ $(function(){
 				}
 			}
 		}else if(night === "1"){ // 夜间模式的样式
-			$("body").css({"background":"#2f3640","color":"white"});
+			$("body").css({"background":"#2d2d2d","color":"white"});
 			for(var i = 0; i < 4; i++){
 				var a_c = $(".function nav a").eq(i).css("color");
 				if(a_c === "rgb(0, 0, 0)"){
