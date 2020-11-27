@@ -50,7 +50,12 @@ $(function(){
 		if(night === "0"){ // 白天模式的样式
 			console.log("night=0;白天");
 			$("body").css({"background":"","color":""});
-			$("a").css({"color":""});
+			for(var i = 0; i < 4; i++){
+				var a_c = $(".function nav a").eq(i).css("color");
+				if(a_c === "rgb(255, 255, 255)"){
+					$(".function nav a").eq(i).css("color","black");
+				}
+			}
 		}else if(night === "1"){ // 夜间模式的样式
 			console.log("night=1;黑夜");
 			$("body").css({"background":"black","color":"white"});
