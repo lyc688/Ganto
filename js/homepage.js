@@ -19,11 +19,11 @@ window.onload = function(){
 // 	}
 }
 $(function(){	
-	$(".demo>nav>span").click(function(){
+	$(".demo>nav>span").dblclick(function(){
 		setCookie("night","1","100000");		
 		panduan();	
 	});	
-	$(".demo>nav>span").dblclick(function(){
+	$(".demo>nav>span").click(function(){
 		setCookie("night","0","100000");
 		panduan();
 	});			
@@ -49,10 +49,17 @@ $(function(){
 		night = getCookie("night");
 		if(night === "0"){ // 白天模式的样式
 			console.log("night=0;白天");
-			$("body").css("background","");
+			$("body").css({"background":"","color":""});
+			$("a").css({"color":""});
 		}else if(night === "1"){ // 夜间模式的样式
 			console.log("night=1;黑夜");
-			$("body").css("background","black");
+			$("body").css({"background":"black","color":"white"});
+			for(var i = 0; i < 4; i++){
+				var a_c = $(".function nav a").eq(i).css("color");
+				if(a_c === "rgb(0, 0, 0)"){
+					$(".function nav a").eq(i).css("color","white");
+				}
+			}
 		}else{ // 如果当前页面没有night这个cookie值，就设置默认的cookie值
 			setCookie("night","0","100000");
 		}
