@@ -59,7 +59,7 @@ $(function(){
 			if(a_c === "rgb(0, 0, 0)"){
 				$(".function nav a").eq(i).css("color","white");
 			}else if(a_c === "rgb(255, 255, 255)"){
-				$(".function nav a").eq(i).css("color","black");
+				$(".function nav a").eq(i).css("color","");
 			}
 		}
 	}
