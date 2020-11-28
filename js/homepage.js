@@ -49,6 +49,7 @@ $(function(){
 		night = getCookie("night");
 		if(night === "0"){ // 白天模式的样式
 			$("body").css({"background":"white","color":"black"});
+			$("#veditor").css({"color":"black"});
 			for(var i = 0; i < 4; i++){
 				var a_c = $(".function nav a").eq(i).css("color");
 				if(a_c === "rgb(255, 255, 255)"){
@@ -57,6 +58,7 @@ $(function(){
 			}
 		}else if(night === "1"){ // 夜间模式的样式
 			$("body").css({"background":"#2d2d2d","color":"white"});
+			$("#veditor").css({"color":"white"});
 			for(var i = 0; i < 4; i++){
 				var a_c = $(".function nav a").eq(i).css("color");
 				if(a_c === "rgb(0, 0, 0)"){
