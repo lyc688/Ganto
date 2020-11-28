@@ -23,9 +23,21 @@ window.onload = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			body_d.style.backgroundColor = "rgb(45, 45, 45)";
 			body_d.style.color = "white";
+			for(var i = 0; i < 4; i++){
+				var a_c = document.getElementsByTagName("a")[i].style.color;
+				if(a_c === "rgb(0, 0, 0)"){
+					document.getElementsByTagName("a")[i].style.color = "white";
+				}
+			}
 		}else if(localStorage.getItem("theme") === "light"){
 			body_d.style.backgroundColor = "white";
 			body_d.style.color = "black";
+			for(var i = 0; i < 4; i++){
+				var a_c = document.getElementsByTagName("a")[i].style.color;
+				if(a_c === "rgb(255, 255, 255)"){
+					document.getElementsByTagName("a")[i].style.color = "black";
+				}
+			}
 		}else{
 			localStorage.setItem("theme","light");
 		}
