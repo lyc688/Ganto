@@ -17,8 +17,30 @@ window.onload = function(){
 // 	document.querySelector(".demo span").onclick=function(){
 // 		window.open("https://live.bilibili.com/6");
 // 	}
+	const body_d = document.getElementsByTagName("body")[0],
+	toggle_d = document.querySelector(".toggle");
+	function pd(){
+		if(localStorage.getItem("theme") === "dark"){
+			body_d.style.backgroundColor = "rgb(45, 45, 45)";
+			body_d.style.color = "white";
+		}else if(localStorage.getItem("theme") === "light"){
+			body_d.style.backgroundColor = "white";
+			body_d.style.color = "black";
+		}else{
+			localStorage.setItem("theme","light");
+		}
+	}
+	toggle_d.onclick = function(){
+		if(localStorage.getItem("theme") === "dark"){
+			localStorage.setItem("theme","light");
+		}else if(localStorage.getItem("theme") === "light"){
+			localStorage.setItem("theme","dark");
+		}
+		pd();
+	}
+	pd();
 }
-$(function(){	
+/* $(function(){	
 	$(".demo>nav>span").dblclick(function(){
 		setCookie("night","1","100000");		
 		panduan();	
@@ -70,4 +92,4 @@ $(function(){
 		}
 	}
 	panduan();
-})
+}) */
