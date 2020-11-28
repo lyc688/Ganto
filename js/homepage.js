@@ -48,7 +48,7 @@ $(function(){
 	function panduan(){
 		night = getCookie("night");
 		if(night === "0"){ // 白天模式的样式
-			$("body").css({"background":"","color":""});
+			$("body").css({"background":"white","color":"black"});
 			for(var i = 0; i < 4; i++){
 				var a_c = $(".function nav a").eq(i).css("color");
 				if(a_c === "rgb(255, 255, 255)"){
