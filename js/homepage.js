@@ -25,9 +25,7 @@ window.onload = function(){
 			body_d.style.color = "white";
 			for(var i = 0; i < 4; i++){
 				var a_c = document.getElementsByTagName("a")[i].style.color;
-				console.log(a_c);
 				if(a_c === "black"){
-					console.log("进入if语句");
 					document.getElementsByTagName("a")[i].style.color = "white";
 				}
 			}
@@ -36,9 +34,7 @@ window.onload = function(){
 			body_d.style.color = "black";
 			for(var i = 0; i < 4; i++){
 				var a_c = document.getElementsByTagName("a")[i].style.color;
-				console.log(a_c);
 				if(a_c === "white"){
-					console.log("进入if语句");
 					document.getElementsByTagName("a")[i].style.color = "black";
 				}
 			}
