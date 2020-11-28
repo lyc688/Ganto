@@ -55,10 +55,10 @@ $(function(){
 			setCookie("night","0","100000");
 		}
 		for(var i = 0; i < 4; i++){
-			var a_c = $(".function nav a").eq(i).css("color");
+			var a_c = $(".function nav a").css("color");
 			if(a_c === "rgb(45, 45, 45)"){
 				$(".function nav a").eq(i).css("color","white");
-			}else if(a_c === "rgb(0, 0, 0)"){
+			}else if(a_c === "rgb(255, 255, 255)"){
 				$(".function nav a").eq(i).css("color","black");
 			}
 		}
