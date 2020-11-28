@@ -261,3 +261,12 @@ span.vnick,a.vnick {
 		color: white;
 	}
 }
+@media (prefers-color-scheme: light){
+	body{
+		background: rgb(255, 255, 255);
+		color: black;
+	}
+	#veditor{
+		color: black;
+	}
+}
