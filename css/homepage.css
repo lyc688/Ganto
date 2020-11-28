@@ -252,21 +252,3 @@ span.vnick,a.vnick {
 	margin-top: 10px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
-@media (prefers-color-scheme: dark){
-	body{
-		background: rgb(45, 45, 45);
-		color: white;
-	}
-	#veditor{
-		color: white;
-	}
-}
-@media (prefers-color-scheme: light){
-	body{
-		background: rgb(255, 255, 255);
-		color: black;
-	}
-	#veditor{
-		color: black;
-	}
-}
