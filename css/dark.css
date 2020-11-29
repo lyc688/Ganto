@@ -1,4 +1,7 @@
 :root {
 	--color: rgb(250, 250, 250);
-	--background-color: rgb(5, 5, 5);
+	--background-color: rgb(32, 24, 1);
+}
+a{
+	color: white;
 }
