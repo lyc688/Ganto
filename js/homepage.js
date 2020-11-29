@@ -41,14 +41,13 @@ function judge(){
 })();
 window.onload = function(){
 	document.querySelector(".toggle").onclick = function(){
-		console.log(this.index);
+		localStorage.setItem("num",this.index);
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
 			for(var i = 0; i < 4; i ++){
 				var a_color = document.getElementsByTagName("a")[i].style.color;
 				if(a_color === "white"){
 					document.getElementsByTagName("a")[i].style.color = "black";
-					localStorage.setItem("num",i);
 				}
 			}
 		}else{
@@ -57,7 +56,6 @@ window.onload = function(){
 				var a_color = document.getElementsByTagName("a")[i].style.color;
 				if(a_color === "black"){
 					document.getElementsByTagName("a")[i].style.color = "white";
-					localStorage.setItem("num",i);
 				}
 			}
 			
