@@ -1,10 +1,6 @@
-(() => {
-	judge();
-})();
+const dark = document.getElementById("dark"),
+	light = document.getElementById("light");
 function judge(){
-	const dark = document.getElementById("dark");
-	const light = document.getElementById("light");
-	
 	if(localStorage.getItem("theme") === "dark"){
 		dark.setAttribute("media","all");
 		light.setAttribute("media","not all");
@@ -15,6 +11,9 @@ function judge(){
 		localStorage.setItem("theme","light");
 	}
 }
+(() => {
+	judge();
+})();
 window.onload = function(){
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
@@ -38,7 +37,6 @@ window.onload = function(){
 		var s = document.getElementsByTagName("script")[0]; 
 		s.parentNode.insertBefore(hm, s);
 	})();
-
 // 	document.querySelector(".demo span").onclick=function(){
 // 		window.open("https://live.bilibili.com/6");
 // 	}
