@@ -5,31 +5,31 @@ function judge(){
 		dark.setAttribute("media","all");
 		light.setAttribute("media","not all");
 		console.log(localStorage.getItem("num"),typeof localStorage.getItem("num"));
-		if(localStorage.getItem("num") === "0"){
-			document.getElementsByTagName("a")[0].style.color = "white";
-		}else if(localStorage.getItem("num") === "1"){
-			document.getElementsByTagName("a")[1].style.color = "white";
-		}else if(localStorage.getItem("num") === "2"){
-			document.getElementsByTagName("a")[2].style.color = "white"; 
-		}else if(localStorage.getItem("num") === "3"){
-			document.getElementsByTagName("a")[3].style.color = "white"; 
-		}else{
-			localStorage.setItem("num","0");
-		}
+// 		if(localStorage.getItem("num") === "0"){
+// 			document.getElementsByTagName("a")[0].style.color = "white";
+// 		}else if(localStorage.getItem("num") === "1"){
+// 			document.getElementsByTagName("a")[1].style.color = "white";
+// 		}else if(localStorage.getItem("num") === "2"){
+// 			document.getElementsByTagName("a")[2].style.color = "white"; 
+// 		}else if(localStorage.getItem("num") === "3"){
+// 			document.getElementsByTagName("a")[3].style.color = "white"; 
+// 		}else{
+// 			localStorage.setItem("num","0");
+// 		}
 	}else if(localStorage.getItem("theme") === "light"){
 		dark.setAttribute("media","not all");
 		light.setAttribute("media","all");
-		if(localStorage.getItem("num") === "0"){
-			document.getElementsByTagName("a")[0].style.color = "black";
-		}else if(localStorage.getItem("num") === "1"){
-			document.getElementsByTagName("a")[1].style.color = "black";
-		}else if(localStorage.getItem("num") === "2"){
-			document.getElementsByTagName("a")[2].style.color = "black"; 
-		}else if(localStorage.getItem("num") === "3"){
-			document.getElementsByTagName("a")[3].style.color = "black"; 
-		}else{
-			localStorage.setItem("num","0");
-		}
+// 		if(localStorage.getItem("num") === "0"){
+// 			document.getElementsByTagName("a")[0].style.color = "black";
+// 		}else if(localStorage.getItem("num") === "1"){
+// 			document.getElementsByTagName("a")[1].style.color = "black";
+// 		}else if(localStorage.getItem("num") === "2"){
+// 			document.getElementsByTagName("a")[2].style.color = "black"; 
+// 		}else if(localStorage.getItem("num") === "3"){
+// 			document.getElementsByTagName("a")[3].style.color = "black"; 
+// 		}else{
+// 			localStorage.setItem("num","0");
+// 		}
 	}else{
 		localStorage.setItem("theme","light");
 	}
@@ -45,27 +45,20 @@ window.onload = function(){
 	for(var j=0; j<a.length; j++){
 		a[j].index = j; // 为第i个li元素添加一个index属性，赋值为i
 		a[j].addEventListener('click',function() {
-			console.log(this.index);
 			localStorage.setItem("num",this.index);
 			// 为第i个li元素添加一个click事件，当元素被点击时，则会在控制台输出索引
 		})
 	}
+	
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
-			for(var i = 0; i < 4; i ++){
-				var a_color = document.getElementsByTagName("a")[i].style.color;
-				if(a_color === "white"){
-					document.getElementsByTagName("a")[i].style.color = "black";
-				}
+				document.getElementsByTagName("a")[parseInt(localStorage.getItem("theme"))].style.color = "black";
 			}
 		}else{
 			localStorage.setItem("theme","dark");
 			for(var i = 0; i < 4; i ++){
-				var a_color = document.getElementsByTagName("a")[i].style.color;
-				if(a_color === "black"){
-					document.getElementsByTagName("a")[i].style.color = "white";
-				}
+				document.getElementsByTagName("a")[parseInt(localStorage.getItem("theme"))].style.color = "white";
 			}
 			
 		}
