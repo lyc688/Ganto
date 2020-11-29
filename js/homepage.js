@@ -18,15 +18,15 @@ window.onload = function(){
 	if(localStorage.getItem("theme") === "dark"){
 		for(var i = 0; i < 4; i++){
 			var a_c = document.getElementsByTagName("a")[i].style.color;
-			if(a_c === "white"){
-				document.getElementsByTagName("a")[i].style.color = "black";
+			if(a_c === "black"){
+				document.getElementsByTagName("a")[i].style.color = "white";
 			}
 		}
 	}else{
 		for(var i = 0; i < 4; i++){
 			var a_c = document.getElementsByTagName("a")[i].style.color;
-			if(a_c === "black"){
-				document.getElementsByTagName("a")[i].style.color = "white";
+			if(a_c === "white"){
+				document.getElementsByTagName("a")[i].style.color = "black";
 			}
 		}
 	}
