@@ -4,6 +4,7 @@ function judge(){
 	if(localStorage.getItem("theme") === "dark"){
 		dark.setAttribute("media","all");
 		light.setAttribute("media","not all");
+		console.log(localStorage.getItem("num"),typeof localStorage.getItem("num"));
 		if(localStorage.getItem("num") == 0){
 			document.getElementsByTagName("a")[0].style.color = "white";
 		}else if(localStorage.getItem("num") == 1){
