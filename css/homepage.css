@@ -17,6 +17,9 @@
 .active{
 	color: var(--active);
 }
+#veditor{
+	color: var(--active);
+}
 ::selection{
 	color: white;
 	background-color: black;
