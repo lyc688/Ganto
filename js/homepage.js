@@ -21,7 +21,7 @@ window.onload = function(){
 			for(var i = 0; i < 4; i++){
 				var a_c = document.getElementsByTagName("a")[i].style.color;
 				if(a_c === "rgb(0, 0, 0)"){
-					document.getElementsByTagName("a")[i].style.color = "white";
+					document.getElementsByTagName("a")[i].style.color = "black";
 				}
 			}
 		}else{
@@ -29,7 +29,7 @@ window.onload = function(){
 			for(var i = 0; i < 4; i++){
 				var a_c = document.getElementsByTagName("a")[i].style.color;
 				if(a_c === "rgb(255, 255, 255)"){
-					document.getElementsByTagName("a")[i].style.color = "black";
+					document.getElementsByTagName("a")[i].style.color = "white";
 				}
 			}
 		}
