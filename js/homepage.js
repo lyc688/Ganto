@@ -15,14 +15,14 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
-	document.querySelector(".toggle").onclick = function(){
-		if(localStorage.getItem("theme") === "dark"){
-			localStorage.setItem("theme","light");
-		}else{
-			localStorage.setItem("theme","dark");
-		}
-		judge();
-	}
+// 	document.querySelector(".toggle").onclick = function(){
+// 		if(localStorage.getItem("theme") === "dark"){
+// 			localStorage.setItem("theme","light");
+// 		}else{
+// 			localStorage.setItem("theme","dark");
+// 		}
+// 		judge();
+// 	}
 	console.log("%c   ____  \n" +
 		"  / ___\\ \n"+
 		" / /   __  \n"+
