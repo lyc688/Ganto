@@ -5,13 +5,13 @@ function judge(){
 		dark.setAttribute("media","all");
 		light.setAttribute("media","not all");
 		console.log(localStorage.getItem("num"),typeof localStorage.getItem("num"));
-		if(localStorage.getItem("num") == 0){
+		if(localStorage.getItem("num") === "0"){
 			document.getElementsByTagName("a")[0].style.color = "white";
-		}else if(localStorage.getItem("num") == 1){
+		}else if(localStorage.getItem("num") === "1"){
 			document.getElementsByTagName("a")[1].style.color = "white";
-		}else if(localStorage.getItem("num") == 2){
+		}else if(localStorage.getItem("num") === "2"){
 			document.getElementsByTagName("a")[2].style.color = "white"; 
-		}else if(localStorage.getItem("num") == 3){
+		}else if(localStorage.getItem("num") === "3"){
 			document.getElementsByTagName("a")[3].style.color = "white"; 
 		}else{
 			localStorage.setItem("num","0");
@@ -19,13 +19,13 @@ function judge(){
 	}else if(localStorage.getItem("theme") === "light"){
 		dark.setAttribute("media","not all");
 		light.setAttribute("media","all");
-		if(localStorage.getItem("num") == 0){
+		if(localStorage.getItem("num") === "0"){
 			document.getElementsByTagName("a")[0].style.color = "black";
-		}else if(localStorage.getItem("num") == 1){
+		}else if(localStorage.getItem("num") === "1"){
 			document.getElementsByTagName("a")[1].style.color = "black";
-		}else if(localStorage.getItem("num") == 2){
+		}else if(localStorage.getItem("num") === "2"){
 			document.getElementsByTagName("a")[2].style.color = "black"; 
-		}else if(localStorage.getItem("num") == 3){
+		}else if(localStorage.getItem("num") === "3"){
 			document.getElementsByTagName("a")[3].style.color = "black"; 
 		}else{
 			localStorage.setItem("num","0");
