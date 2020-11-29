@@ -41,7 +41,7 @@ function judge(){
 })();
 window.onload = function(){
 	var a = document.getElementsByTagName('a'); // 获取所有li元素
-	for(var j=0; j<d.length; j++){
+	for(var j=0; j<a.length; j++){
 		a[j].index = j; // 为第i个li元素添加一个index属性，赋值为i
 		a[j].addEventListener('click',function() {
 			console.log(this.index);
