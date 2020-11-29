@@ -4,42 +4,50 @@ function judge(){
 	if(localStorage.getItem("theme") === "dark"){
 		dark.setAttribute("media","all");
 		light.setAttribute("media","not all");
-		
+		if(localStorage.getItem("num") === 0){
+			document.getElementsByTagName("a")[0].style.color = "white";
+		}else if(localStorage.getItem("num") === 1){
+			document.getElementsByTagName("a")[1].style.color = "white";
+		}else if(localStorage.getItem("num") === 2){
+			document.getElementsByTagName("a")[2].style.color = "white"; 
+		}else if(localStorage.getItem("num") === 3){
+			document.getElementsByTagName("a")[3].style.color = "white"; 
+		}else{
+			localStorage.setItem("num","0");
+		}
 	}else if(localStorage.getItem("theme") === "light"){
 		dark.setAttribute("media","not all");
 		light.setAttribute("media","all");
-		
+		if(localStorage.getItem("num") === 0){
+			document.getElementsByTagName("a")[0].style.color = "black";
+		}else if(localStorage.getItem("num") === 1){
+			document.getElementsByTagName("a")[1].style.color = "black";
+		}else if(localStorage.getItem("num") === 2){
+			document.getElementsByTagName("a")[2].style.color = "black"; 
+		}else if(localStorage.getItem("num") === 3){
+			document.getElementsByTagName("a")[3].style.color = "black"; 
+		}else{
+			localStorage.setItem("num","0");
+		}
 	}else{
 		localStorage.setItem("theme","light");
 	}
+	
+	
 	
 }
 (() => {
 	judge();
 })();
 window.onload = function(){
-	if(localStorage.getItem("theme") === "dark"){
-		for(var i = 0; i < 4; i ++){
-			var a_color = document.getElementsByTagName("a")[i].style.color;
-			if(a_color === "black"){
-				   document.getElementsByTagName("a")[i].style.color = "white";
-			}
-		}
-	}else if(localStorage.getItem("theme") === "light"){
-		for(var i = 0; i < 4; i ++){
-			var a_color = document.getElementsByTagName("a")[i].style.color;
-			if(a_color === "white"){
-				   document.getElementsByTagName("a")[i].style.color = "black";
-			}
-		}
-	}
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
 			for(var i = 0; i < 4; i ++){
 				var a_color = document.getElementsByTagName("a")[i].style.color;
 				if(a_color === "white"){
-					   document.getElementsByTagName("a")[i].style.color = "black";
+					document.getElementsByTagName("a")[i].style.color = "black";
+					localStorage.setItem("num",i);
 				}
 			}
 		}else{
@@ -47,7 +55,8 @@ window.onload = function(){
 			for(var i = 0; i < 4; i ++){
 				var a_color = document.getElementsByTagName("a")[i].style.color;
 				if(a_color === "black"){
-					   document.getElementsByTagName("a")[i].style.color = "white";
+					document.getElementsByTagName("a")[i].style.color = "white";
+					localStorage.setItem("num",i);
 				}
 			}
 			
