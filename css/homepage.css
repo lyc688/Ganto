@@ -16,6 +16,8 @@ body::-webkit-scrollbar {
 	display: none;
 }
 body{
+	color: var(--color);
+	background-color: var(--background-color);
 	position: absolute;
 	top: 0;
 	right: 0;
