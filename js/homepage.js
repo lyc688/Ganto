@@ -46,16 +46,15 @@ window.onload = function(){
 		a[j].index = j; // 为第i个li元素添加一个index属性，赋值为i
 		a[j].addEventListener('click',function() {
 			localStorage.setItem("num",this.index);
-			if(localStorage.getItem("theme") === "dark"){
-				document.getElementsByTagName("a")[this.index].style.color = "black";
-			}else{
-				document.getElementsByTagName("a")[this.index].style.color = "white";
-
-			}
 			// 为第i个li元素添加一个click事件，当元素被点击时，则会在控制台输出索引
 		})
 	}
-	
+	if(localStorage.getItem("theme") === "dark"){
+		document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
+	}else{
+		document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
+
+	}
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
