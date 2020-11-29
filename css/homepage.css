@@ -5,7 +5,7 @@
 	-webkit-filter: grayscale(100%); */
 }
 [data-theme=dark]{
-	background-color: #FF141414;
+	background-color: #141414;
 	color: white;
 	--active: white;
 }
