@@ -53,11 +53,11 @@ window.onload = function(){
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
-			console.log(parseInt(localStorage.getItem("theme")),localStorage.getItem("theme"));
-			document.getElementsByTagName("a")[parseInt(localStorage.getItem("theme"))].style.color = "black";
+			console.log(parseInt(localStorage.getItem("num")),localStorage.getItem("num"));
+			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
 		}else{
 			localStorage.setItem("theme","dark");
-			document.getElementsByTagName("a")[parseInt(localStorage.getItem("theme"))].style.color = "white";
+			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
 			
 		}
 		judge();
