@@ -60,10 +60,10 @@ window.onload = function(){
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
-			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
+			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
 		}else{
 			localStorage.setItem("theme","dark");
-			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
+			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
 			
 		}
 		judge();
