@@ -5,18 +5,18 @@ function judge(){
 		dark.setAttribute("media","all");
 		light.setAttribute("media","not all");
 		for(var i = 0; i < 4; i ++){
-			var a_color = document.getElementsByName("a")[i].style.color;
+			var a_color = document.getElementsByTagName("a")[i].style.color;
 			if(a_color === "black"){
-				   document.getElementsByName("a")[i].style.color = "white";
+				   document.getElementsByTagName("a")[i].style.color = "white";
 			}
 		}
 	}else if(localStorage.getItem("theme") === "light"){
 		dark.setAttribute("media","not all");
 		light.setAttribute("media","all");
 		for(var i = 0; i < 4; i ++){
-			var a_color = document.getElementsByName("a")[i].style.color;
+			var a_color = document.getElementsByTagName("a")[i].style.color;
 			if(a_color === "white"){
-				   document.getElementsByName("a")[i].style.color = "black";
+				   document.getElementsByTagName("a")[i].style.color = "black";
 			}
 		}
 	}else{
