@@ -53,13 +53,10 @@ window.onload = function(){
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
-				document.getElementsByTagName("a")[parseInt(localStorage.getItem("theme"))].style.color = "black";
-			}
+			document.getElementsByTagName("a")[parseInt(localStorage.getItem("theme"))].style.color = "black";
 		}else{
 			localStorage.setItem("theme","dark");
-			for(var i = 0; i < 4; i ++){
-				document.getElementsByTagName("a")[parseInt(localStorage.getItem("theme"))].style.color = "white";
-			}
+			document.getElementsByTagName("a")[parseInt(localStorage.getItem("theme"))].style.color = "white";
 			
 		}
 		judge();
