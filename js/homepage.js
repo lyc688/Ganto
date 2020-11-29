@@ -4,12 +4,25 @@ function judge(){
 	if(localStorage.getItem("theme") === "dark"){
 		dark.setAttribute("media","all");
 		light.setAttribute("media","not all");
+		for(const i = 0; i < 4; i ++){
+			var a_color = document.getElementsByName("a")[i].style.color;
+			if(a_color === "black"){
+				   document.getElementsByName("a")[i].style.color = "white";
+			}
+		}
 	}else if(localStorage.getItem("theme") === "light"){
 		dark.setAttribute("media","not all");
 		light.setAttribute("media","all");
+		for(const i = 0; i < 4; i ++){
+			var a_color = document.getElementsByName("a")[i].style.color;
+			if(a_color === "white"){
+				   document.getElementsByName("a")[i].style.color = "black";
+			}
+		}
 	}else{
 		localStorage.setItem("theme","light");
 	}
+	
 }
 (() => {
 	judge();
