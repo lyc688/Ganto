@@ -21,14 +21,6 @@ window.onload = function(){
 	}else{
 		document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
 	}
-	var a = document.getElementsByTagName('a'); // 获取所有a元素
-	for(var j=0; j<a.length; j++){
-		a[j].index = j; // 为第j个a元素添加一个index属性，赋值为j
-		a[j].addEventListener('click',function() {
-			localStorage.setItem("num",this.index);
-			// 为第j个a元素添加一个click事件，当元素被点击时，则会设置localStorage储存起来
-		})
-	}
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
