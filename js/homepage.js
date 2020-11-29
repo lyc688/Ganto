@@ -40,8 +40,16 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
+	var a = document.getElementsByTagName('a'); // 获取所有li元素
+	for(var j=0; j<d.length; j++){
+		a[j].index = j; // 为第i个li元素添加一个index属性，赋值为i
+		a[j].addEventListener('click',function() {
+			console.log(this.index);
+			localStorage.setItem("num",this.index);
+			// 为第i个li元素添加一个click事件，当元素被点击时，则会在控制台输出索引
+		})
+	}
 	document.querySelector(".toggle").onclick = function(){
-		localStorage.setItem("num",this.index);
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
 			for(var i = 0; i < 4; i ++){
