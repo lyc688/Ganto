@@ -51,19 +51,19 @@ window.onload = function(){
 	}
 	if(localStorage.getItem("theme") === "dark"){
 		console.log(parseInt(localStorage.getItem("num")),localStorage.getItem("num"));
-		document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
+		document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
 	}else{
 		console.log(parseInt(localStorage.getItem("num")),localStorage.getItem("num"));
-		document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
+		document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
 
 	}
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
-			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
+			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
 		}else{
 			localStorage.setItem("theme","dark");
-			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
+			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
 			
 		}
 		judge();
