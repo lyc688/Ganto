@@ -41,6 +41,7 @@ function judge(){
 })();
 window.onload = function(){
 	document.querySelector(".toggle").onclick = function(){
+		console.log(this.index);
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
 			for(var i = 0; i < 4; i ++){
