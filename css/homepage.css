@@ -4,6 +4,19 @@
 	/* filter: grayscale(100%);
 	-webkit-filter: grayscale(100%); */
 }
+[data-theme=dark]{
+	background-color: black;
+	color: white;
+	--active: white;
+}
+[data-theme=light]{
+	background-color: white;
+	color: black;
+	--active: black;
+}
+.active{
+	color: var(--active);
+}
 ::selection{
 	color: white;
 	background-color: black;
@@ -16,8 +29,6 @@ body::-webkit-scrollbar {
 	display: none;
 }
 body{
-	color: var(--color);
-	background-color: var(--background-color);
 	position: absolute;
 	top: 0;
 	right: 0;
