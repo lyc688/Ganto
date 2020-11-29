@@ -16,19 +16,23 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
-	if(localStorage.getItem("theme") === "dark"){
-		document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
-	}else{
-		document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
-	}
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
-			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "black";
+			for(var i = 0; i < 4; i++){
+				var a_c = document.getElementsByTagName("a")[i].style.color;
+				if(a_c === "rgb(0, 0, 0)"){
+					document.getElementsByTagName("a")[i].style.color = "white";
+				}
+			}
 		}else{
 			localStorage.setItem("theme","dark");
-			document.getElementsByTagName("a")[parseInt(localStorage.getItem("num"))].style.color = "white";
-			
+			for(var i = 0; i < 4; i++){
+				var a_c = document.getElementsByTagName("a")[i].style.color;
+				if(a_c === "rgb(255, 255, 255)"){
+					document.getElementsByTagName("a")[i].style.color = "black";
+				}
+			}
 		}
 		judge();
 	}
