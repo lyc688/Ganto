@@ -4,7 +4,6 @@ function judge(){
 	if(localStorage.getItem("theme") === "dark"){
 		dark.setAttribute("media","all");
 		light.setAttribute("media","not all");
-
 	}else if(localStorage.getItem("theme") === "light"){
 		dark.setAttribute("media","not all");
 		light.setAttribute("media","all");
