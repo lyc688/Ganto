@@ -15,6 +15,21 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
+	if(localStorage.getItem("theme") === "dark"){
+		for(var i = 0; i < 4; i++){
+			var a_c = document.getElementsByTagName("a")[i].style.color;
+			if(a_c === "white"){
+				document.getElementsByTagName("a")[i].style.color = "black";
+			}
+		}
+	}else{
+		for(var i = 0; i < 4; i++){
+			var a_c = document.getElementsByTagName("a")[i].style.color;
+			if(a_c === "black"){
+				document.getElementsByTagName("a")[i].style.color = "white";
+			}
+		}
+	}
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
