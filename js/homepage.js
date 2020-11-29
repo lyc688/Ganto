@@ -1,52 +1,19 @@
-const dark = document.getElementById("dark"),
-	light = document.getElementById("light");
 function judge(){
 	if(localStorage.getItem("theme") === "dark"){
-		dark.setAttribute("media","all");
-		light.setAttribute("media","not all");
-	}else if(localStorage.getItem("theme") === "light"){
-		dark.setAttribute("media","not all");
-		light.setAttribute("media","all");
+		document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
 	}else{
-		localStorage.setItem("theme","light");
+		document.getElementsByTagName("html")[0].setAttribute("data-theme","light");
 	}
 }
 (() => {
 	judge();
 })();
 window.onload = function(){
-	if(localStorage.getItem("theme") === "dark"){
-		for(var i = 0; i < 4; i++){
-			var a_c = document.getElementsByTagName("a")[i].style.color;
-			if(a_c === "black"){
-				document.getElementsByTagName("a")[i].style.color = "white";
-			}
-		}
-	}else{
-		for(var i = 0; i < 4; i++){
-			var a_c = document.getElementsByTagName("a")[i].style.color;
-			if(a_c === "white"){
-				document.getElementsByTagName("a")[i].style.color = "black";
-			}
-		}
-	}
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
-			for(var i = 0; i < 4; i++){
-				var a_c = document.getElementsByTagName("a")[i].style.color;
-				if(a_c === "white"){
-					document.getElementsByTagName("a")[i].style.color = "black";
-				}
-			}
 		}else{
 			localStorage.setItem("theme","dark");
-			for(var i = 0; i < 4; i++){
-				var a_c = document.getElementsByTagName("a")[i].style.color;
-				if(a_c === "black"){
-					document.getElementsByTagName("a")[i].style.color = "white";
-				}
-			}
 		}
 		judge();
 	}
