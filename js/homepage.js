@@ -9,10 +9,8 @@ function judge(){
 		localStorage.removeItem("theme");
 	}
 }
-const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 (() => {
-	darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-	console.log(darkModeMediaQuery.matches);
+	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 	darkModeMediaQuery.addListener(() => {
 		localStorage.setItem("state","on");
 		judge();
@@ -23,8 +21,16 @@ window.onload = function(){
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
-		}else{
+		}else if(localStorage.getItem("theme") === "light"){
 			localStorage.setItem("theme","dark");
+		}else{
+			const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+			console.log(darkModeMediaQuery.matches);
+			if(darkModeMediaQuery.matches){
+		   		localStorage.setItem("theme","light");
+		   	}else{
+				localStorage.setItem("theme","dark");
+			}
 		}
 		localStorage.removeItem("state");
 		judge();
