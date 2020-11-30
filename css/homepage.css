@@ -300,5 +300,5 @@ span.vnick,a.vnick {
 	border-radius: 5px;
 }
 .cevno>.article:hover{
-	background: var(--article-background-color-hover);
+	background-color: var(--article-background-color-hover);
 }
