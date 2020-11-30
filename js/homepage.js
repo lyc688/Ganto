@@ -8,6 +8,7 @@ function judge(){
 		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
 		localStorage.removeItem("theme");
 	}else{
+		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
 		localStorage.setItem("state","on");
 	}
 }
