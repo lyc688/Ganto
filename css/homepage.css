@@ -13,9 +13,6 @@
 		--selection-color: black;
 		--selection-background-color: white;
 	}
-	#veditor{
-		color: white;
-	}
 }
 @media (prefers-color-scheme: light){
 	:root{
@@ -25,9 +22,6 @@
 		--i: black;
 		--selection-color: white;
 		--selection-background-color: black;
-	}
-	#veditor{
-		color: black;
 	}
 }
 [data-theme=dark]{
@@ -47,9 +41,6 @@
 	--selection-background-color: black;
 }
 .active{
-	color: var(--active);
-}
-#veditor{
 	color: var(--active);
 }
 ::selection{
