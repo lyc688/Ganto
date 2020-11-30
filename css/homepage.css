@@ -35,6 +35,8 @@
 	--i: #4c4c4c;
 	--selection-color: black;
 	--selection-background-color: white;
+	--article-background-color: #4c4c4c;
+	--article-background-color-hover: #404040;
 }
 [data-theme=light]{
 	background-color: white;
@@ -43,6 +45,8 @@
 	--i: black;
 	--selection-color: white;
 	--selection-background-color: black;
+	--article-background-color: #eee;
+	--article-background-color-hover: #ddd;
 }
 .active{
 	color: var(--active);
