@@ -25,7 +25,6 @@ window.onload = function(){
 			localStorage.setItem("theme","dark");
 		}else{
 			const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-			console.log(darkModeMediaQuery.matches);
 			if(darkModeMediaQuery.matches){
 		   		localStorage.setItem("theme","light");
 		   	}else{
