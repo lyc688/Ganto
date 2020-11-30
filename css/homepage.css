@@ -300,8 +300,11 @@ span.vnick,a.vnick {
 .cevno>.article {
 	background-color: var(--article-background-color);
 	padding: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border-radius: 5px;
+}
+.cevno>.article:last-child {
+	margin-bottom: 0px;
 }
 .cevno>.article:hover{
 	background-color: var(--article-background-color-hover);
