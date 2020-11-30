@@ -18,6 +18,8 @@
 	color: white;
 	--active: white;
 	--i: #4c4c4c;
+	--selection-color: black;
+	--selection-background-color: white;
 }
 [data-theme=light]{
 	background-color: white;
@@ -32,8 +34,8 @@
 	color: var(--active);
 }
 ::selection{
-	color: white;
-	background-color: black;
+	color: var(--selection-color);
+	background-color: var(--selection-background-color);
 }
 .cevno i::selection{
 	color: white;
