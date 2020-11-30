@@ -9,9 +9,10 @@ function judge(){
 		localStorage.removeItem("theme");
 	}
 }
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 (() => {
-	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-	console.log(darkModeMediaQuery);
+	darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+	console.log(darkModeMediaQuery.matches);
 	darkModeMediaQuery.addListener(() => {
 		localStorage.setItem("state","on");
 		judge();
