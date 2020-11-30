@@ -4,12 +4,15 @@ function judge(){
 	}else{
 		document.getElementsByTagName("html")[0].setAttribute("data-theme","light");
 	}
+	if(localStorage.getItem("state") === "on"){
+		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
+		localStorage.removeItem("theme");
+	}
 }
 (() => {
 	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 	darkModeMediaQuery.addListener(() => {
-		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
-		localStorage.removeItem("theme");
+		localStorage.setItem("state","on")
 	});
 	judge();
 })();
