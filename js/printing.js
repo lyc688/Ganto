@@ -53,9 +53,9 @@
 		"  / ___\\ \n"+
 		" / /   __  \n"+
 		"/ /____\\ \\  \n"+
-		"\\________/ https://ganto.cn\n","color: #3742FA;" +
+		"\\________/ https://ganto.cn\n" +
 		    fullyear + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds + "\n" +
-		    "小站运营 "+zhD + "天" + zhH + "小时" + zhM + "分钟" + zhS + "秒钟 了"
+		    "小站运营 "+zhD + "天" + zhH + "小时" + zhM + "分钟" + zhS + "秒钟 了","color: #3742FA;"
 	);
 	
 // 	百度统计
