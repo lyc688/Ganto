@@ -290,8 +290,11 @@ span.vnick,a.vnick {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 .cevno>.article {
-    background: #eee;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+	background: #eee;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+.cevno>.article:hover{
+	background: #fff;
 }
