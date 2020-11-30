@@ -12,7 +12,7 @@ function judge(){
 (() => {
 	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 	darkModeMediaQuery.addListener(() => {
-		localStorage.setItem("state","on")
+		localStorage.setItem("state","on");
 	});
 	judge();
 })();
@@ -23,6 +23,7 @@ window.onload = function(){
 		}else{
 			localStorage.setItem("theme","dark");
 		}
+		localStorage.removeItem("state");
 		judge();
 	}
 	console.log("%c   ____  \n" +
