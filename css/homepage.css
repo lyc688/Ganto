@@ -12,6 +12,8 @@
 		--i: #4c4c4c;
 		--selection-color: black;
 		--selection-background-color: white;
+		--article-background-color: #4c4c4c;
+		--article-background-color-hover: #404040;
 	}
 }
 @media (prefers-color-scheme: light){
@@ -22,6 +24,8 @@
 		--i: black;
 		--selection-color: white;
 		--selection-background-color: black;
+		--article-background-color: #eee;
+		--article-background-color-hover: #ddd;
 	}
 }
 [data-theme=dark]{
@@ -290,11 +294,11 @@ span.vnick,a.vnick {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 .cevno>.article {
-	background: #eee;
+	background-color: var(--article-background-color);
 	padding: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
 .cevno>.article:hover{
-	background: #ddd;
+	background: var(--article-background-color-hover);
 }
