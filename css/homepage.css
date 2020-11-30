@@ -18,16 +18,16 @@
 	color: white;
 	--active: white;
 	--i: #4c4c4c;
-	--selection-color: black;
-	--selection-background-color: white;
+/* 	--selection-color: black;
+	--selection-background-color: white; */
 }
 [data-theme=light]{
 	background-color: white;
 	color: black;
 	--active: black;
 	--i: black;
-	--selection-color: white;
-	--selection-background-color: black;
+/* 	--selection-color: white;
+	--selection-background-color: black; */
 }
 .active{
 	color: var(--active);
@@ -36,8 +36,10 @@
 	color: var(--active);
 }
 ::selection{
-	color: var(--selection-color);
-	background-color: var(--selection-background-color);
+/* 	color: var(--selection-color);
+	background-color: var(--selection-background-color); */
+	color: white;
+	background-color: black;
 }
 .cevno i::selection{
 	color: white;
