@@ -2,6 +2,12 @@
 *         Ganto
 *         2020.11.30
 **/
+console.log("%c   ____  \n" +
+		"  / ___\\ \n"+
+		" / /   __  \n"+
+		"/ /____\\ \\  \n"+
+		"\\________/ https://ganto.cn","color: #3742FA;"
+);
 var start = "2020-09-12 04:05:24", // 设置的时间
 start_ = new Date(start).getTime(); // 设置的时间戳
 
