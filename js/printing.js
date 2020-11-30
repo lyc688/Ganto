@@ -56,3 +56,10 @@ if(zhS < 10){
 }
 console.log(fullyear + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds);
 console.log("小站运营 "+zhD + "天" + zhH + "小时" + zhM + "分钟" + zhS + "秒钟 了");
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?02903c6e6f5f09461f68d07b7887f5ea";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
