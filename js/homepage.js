@@ -9,7 +9,7 @@ function judge(){
 	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 	darkModeMediaQuery.addListener((e) => {
 		const darkModeOn = e.matches;
-		localStorage.localStorage.removeItem("theme");
+		localStorage.removeItem("theme");
 	});
 	judge();
 })();
