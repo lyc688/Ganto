@@ -26,6 +26,8 @@
 	color: black;
 	--active: black;
 	--i: black;
+	--selection-color: white;
+	--selection-background-color: black;
 }
 .active{
 	color: var(--active);
