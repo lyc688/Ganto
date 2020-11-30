@@ -7,8 +7,8 @@ function judge(){
 }
 (() => {
 	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-	darkModeMediaQuery.addListener((e) => {
-		const darkModeOn = e.matches;
+	darkModeMediaQuery.addListener(() => {
+		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
 		localStorage.removeItem("theme");
 	});
 	judge();
