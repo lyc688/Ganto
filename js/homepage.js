@@ -7,6 +7,8 @@ function judge(){
 	if(localStorage.getItem("state") === "on"){
 		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
 		localStorage.removeItem("theme");
+	}else{
+		localStorage.setItem("state","on");
 	}
 }
 (() => {
