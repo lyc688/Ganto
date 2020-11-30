@@ -13,6 +13,7 @@ function judge(){
 	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 	darkModeMediaQuery.addListener(() => {
 		localStorage.setItem("state","on");
+		judge();
 	});
 	judge();
 })();
