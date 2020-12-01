@@ -14,6 +14,7 @@
 		--selection-background-color: white;
 		--article-background-color: #4c4c4c;
 		--article-background-color-hover: #404040;
+		--text-shadow: 3px 3px 3px rgba(255,255,255,0.4);
 	}
 }
 @media (prefers-color-scheme: light){
@@ -26,6 +27,7 @@
 		--selection-background-color: black;
 		--article-background-color: #eee;
 		--article-background-color-hover: #ddd;
+		--text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
 	}
 }
 [data-theme=dark]{
@@ -37,6 +39,7 @@
 	--selection-background-color: white;
 	--article-background-color: #4c4c4c;
 	--article-background-color-hover: #404040;
+	--text-shadow: 3px 3px 3px rgba(255,255,255,0.4);
 }
 [data-theme=light]{
 	background-color: white;
@@ -47,6 +50,7 @@
 	--selection-background-color: black;
 	--article-background-color: #eee;
 	--article-background-color-hover: #ddd;
+	--text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
 }
 .active{
 	color: var(--active);
@@ -119,7 +123,7 @@ header::after{
 .name nav b{
 	font-size: 50px;
 	letter-spacing: 5px;
-	text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+	text-shadow: var(--text-shadow);
 	font-weight: 300;
 }
 .function{
