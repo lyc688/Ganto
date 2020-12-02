@@ -1,17 +1,18 @@
 function judge(){
+	console.log("judge");
 	if(localStorage.getItem("theme") === "dark"){
 		document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
+		console.log("judgeDark");
 	}else if(localStorage.getItem("theme") === "light"){
 		document.getElementsByTagName("html")[0].setAttribute("data-theme","light");
+		console.log("judgeLight");
 	}
 }
 (() => {
-	console.log(window.matchMedia('(prefers-color-scheme)').matches);
 	if (window.matchMedia('(prefers-color-scheme)').matches === true) {
 		return;
 	}else{
 		console.log("抱歉！您的浏览器不支持prefers-color-scheme！");
-		
 		if(localStorage.getItem("theme") === "dark"){
 			document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
 		}else if(localStorage.getItem("theme") === "light"){
