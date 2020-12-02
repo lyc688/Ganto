@@ -1,13 +1,13 @@
 .notice{
-	width: 300px;
+	max-width: 400px;
 	background-color: var(--bg);
 	color: var(--color);
 	border-radius: 5px;
 	display: none;
 	padding: 10px;
+	margin: 10px;
 	position: fixed;
-	left: 50%;
-	margin-left: -150px;
+	bottom: 0;
 	z-index: 9999999;
 	box-shadow: var(--box-shadow);
 }
@@ -27,7 +27,7 @@
 	padding: 10px 0;
 }
 .txt .content{
-	max-height: 50px;
+	max-height: 100px;
 	overflow: auto;
 	text-indent: 2em;
 }
