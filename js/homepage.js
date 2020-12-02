@@ -23,7 +23,7 @@ window.onload = function(){
 	
 	// 通知
 	var title = "小站已经适配深色模式";
-	var content = "点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧";
+	var content = "测试";
 	//localStorage.setItem("flag","true"); // 如果需要强制一直显示通知，请取消此条代码注释
 	if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") === content){
 		document.querySelector(".title").innerHTML = title;
