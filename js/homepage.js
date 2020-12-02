@@ -11,7 +11,14 @@ function judge(){
 		return;
 	}else{
 		console.log("抱歉！您的浏览器不支持prefers-color-scheme！");
-		localStorage.setItem("theme","light");
+		
+		if(localStorage.getItem("theme") === "dark"){
+			document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
+		}else if(localStorage.getItem("theme") === "light"){
+			document.getElementsByTagName("html")[0].setAttribute("data-theme","light");
+		}else{
+			localStorage.setItem("theme","light");
+		}
 	}
 	judge();
 })();
