@@ -7,7 +7,7 @@ function judge(){
 }
 (() => {
 	if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-		alert("您的浏览器不支持prefers-color-scheme");
+		console.log(window.matchMedia('(prefers-color-scheme)').media);
 	}
 	judge();
 })();
