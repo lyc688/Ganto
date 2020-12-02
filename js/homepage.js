@@ -35,7 +35,7 @@ window.onload = function(){
 		document.querySelector(".notice").style.display = "block";
 	}else if(localStorage.getItem("flag") === "false" && localStorage.getItem("content") === content){
 		return;
-	}else if(localStorage.getItem("flag") === "false" && localStorage.getItem("content") !== content){
+	}else if(localStorage.getItem("flag") !== "true" && localStorage.getItem("content") !== content){
 		document.querySelector(".title").innerHTML = title;
 		document.querySelector(".content").innerHTML = content;
 		document.querySelector(".notice").style.display = "block";
