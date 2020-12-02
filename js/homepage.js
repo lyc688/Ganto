@@ -1,7 +1,7 @@
 function judge(){
 	if(localStorage.getItem("theme") === "dark"){
 		document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
-	}else{
+	}else if(localStorage.getItem("theme") === "light"){
 		document.getElementsByTagName("html")[0].setAttribute("data-theme","light");
 	}
 	if(localStorage.getItem("state") === "on"){
