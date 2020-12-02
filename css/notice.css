@@ -27,7 +27,7 @@
 	padding: 10px 0;
 }
 .txt .content{
-	max-height: 100px;
+	max-height: 50px;
 	overflow: auto;
 	text-indent: 2em;
 }
