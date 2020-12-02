@@ -17,7 +17,6 @@ window.onload = function(){
 		}else{
 			localStorage.setItem("theme","dark");
 		}
-		localStorage.removeItem("state");
 		judge();
 	}
 // 	document.querySelector(".demo span").onclick=function(){
