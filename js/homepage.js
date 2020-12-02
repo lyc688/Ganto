@@ -29,11 +29,14 @@ window.onload = function(){
 		document.querySelector(".title").innerHTML = title;
 		document.querySelector(".content").innerHTML = content;
 		document.querySelector(".notice").style.display = "block";
+		console.log("0");
 	}else if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") !== content){
 		document.querySelector(".title").innerHTML = title;
 		document.querySelector(".content").innerHTML = content;
 		document.querySelector(".notice").style.display = "block";
+		console.log("1");
 	}else if(localStorage.getItem("flag") === "false" && localStorage.getItem("content") === content){
+		console.log("2");
 		return;
 	}else if(localStorage.getItem("flag") !== "true" && localStorage.getItem("content") !== content){
 		document.querySelector(".title").innerHTML = title;
@@ -41,6 +44,7 @@ window.onload = function(){
 		document.querySelector(".notice").style.display = "block";
 		localStorage.setItem("content",content);
 		localStorage.setItem("flag","ture");
+		console.log("3");
 	}
 	document.querySelector(".off").onclick = function(){
 		document.querySelector(".notice").style.display = "none";
