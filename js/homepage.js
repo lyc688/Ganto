@@ -11,7 +11,6 @@ function judge(){
 }
 (() => {
 	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-	console.log(darkModeMediaQuery.matches);
 	if(darkModeMediaQuery.matches){
    		document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
 	}else{
