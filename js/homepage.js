@@ -6,6 +6,9 @@ function judge(){
 	}
 }
 (() => {
+	if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+		alert("您的浏览器不支持prefers-color-scheme");
+	}
 	judge();
 })();
 window.onload = function(){
