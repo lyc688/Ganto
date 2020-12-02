@@ -10,6 +10,7 @@ function judge(){
 	if (window.matchMedia('(prefers-color-scheme)').matches === "true") {
 		return;
 	}else{
+		console.log("抱歉！您的浏览器不支持prefers-color-scheme！")
 		localStorage.setItem("theme","light");
 	}
 	judge();
