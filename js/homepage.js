@@ -39,7 +39,7 @@ window.onload = function(){
 		document.querySelector(".title").innerHTML = title;
 		document.querySelector(".content").innerHTML = content;
 		document.querySelector(".notice").style.display = "block";
-		localStorage.setItem("notice",content);
+		localStorage.setItem("content",content);
 		localStorage.setItem("flag","ture");
 	}
 	document.querySelector(".off").onclick = function(){
