@@ -9,6 +9,7 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
+	// 点击切换深色/浅色模式
 	document.querySelector(".toggle").onclick = function(){
 		if(localStorage.getItem("theme") === "dark"){
 			localStorage.setItem("theme","light");
@@ -19,6 +20,35 @@ window.onload = function(){
 		}
 		judge();
 	}
+	
+	// 通知
+	var title = "小站已经适配深色模式";
+	var content = "点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧点击辣条切换吧";
+	localStorage.setItem("flag","true"); // 如果需要强制一直显示通知，请取消此条代码注释
+	if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") === content){
+		document.querySelector(".title").innerHTML = title;
+		document.querySelector(".content").innerHTML = content;
+		document.querySelector(".notice").style.display = "block";
+	}else if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") !== content){
+		document.querySelector(".title").innerHTML = title;
+		document.querySelector(".content").innerHTML = content;
+		document.querySelector(".notice").style.display = "block";
+	}else if(localStorage.getItem("flag") === "false" && localStorage.getItem("content") === content){
+		return;
+	}else if(localStorage.getItem("flag") === "false" && localStorage.getItem("content") !== content){
+		document.querySelector(".title").innerHTML = title;
+		document.querySelector(".content").innerHTML = content;
+		document.querySelector(".notice").style.display = "block";
+		localStorage.setItem("notice",content);
+		localStorage.setItem("flag","ture");
+	}
+	document.querySelector(".off").onclick = function(){
+		document.querySelector(".notice").style.display = "none";
+		localStorage.setItem("flag","false");
+	}
+	
+	
+	
 // 	document.querySelector(".demo span").onclick=function(){
 // 		window.open("https://live.bilibili.com/6");
 // 	}
