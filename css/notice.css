@@ -1,5 +1,5 @@
 .notice{
-	width: 400px;
+	width: 300px;
 	background-color: var(--bg);
 	color: var(--color);
 	border-radius: 5px;
@@ -7,7 +7,7 @@
 	padding: 10px;
 	position: fixed;
 	left: 50%;
-	margin-left: -200px;
+	margin-left: -150px;
 	z-index: 9999999;
 	box-shadow: var(--box-shadow);
 }
