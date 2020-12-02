@@ -160,7 +160,7 @@ header{
 	display: block;
 	width: 72px;
 	height: 72px;
-	background-image: url(https://ganto.cn/img/lt.png);
+	background-image: url(../img/lt.png);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	-webkit-animation: 1.5s steps(13) infinite w_logo;
