@@ -11,7 +11,6 @@ function judge(){
 		return;
 	}else{
 		console.log("抱歉！您的浏览器不支持prefers-color-scheme！");
-		alert("抱歉！您的浏览器不支持prefers-color-scheme！");
 		localStorage.setItem("theme","light");
 	}
 	judge();
