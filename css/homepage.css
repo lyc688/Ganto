@@ -7,7 +7,9 @@
 @media (prefers-color-scheme: dark){
 	:root{
 		background: #35363A;
+		--bg: #35363A;
 		color: white;
+		--color: white;
 		--active: white;
 		--i: #4c4c4c;
 		--selection-color: black;
@@ -15,12 +17,15 @@
 		--article-background-color: rgba(255, 255, 255, .1);
 		--article-background-color-hover: rgba(255, 255, 255, .2);
 		--text-shadow: 3px 3px 3px rgba(255,255,255,0.4);
+		--box-shadow: 0px 0px 3px rgba(255,255,255,0.4);
 	}
 }
 @media (prefers-color-scheme: light){
 	:root{
 		background-color: white;
+		--bg: white;
 		color: black;
+		--color: black;
 		--active: black;
 		--i: black;
 		--selection-color: white;
@@ -28,11 +33,14 @@
 		--article-background-color: #eee;
 		--article-background-color-hover: #ddd;
 		--text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+		--box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
 	}
 }
 [data-theme=dark]{
-	background-color: #35363A;
+	background: #35363A;
+	--bg: #35363A;
 	color: white;
+	--color: white;
 	--active: white;
 	--i: #4c4c4c;
 	--selection-color: black;
@@ -40,10 +48,13 @@
 	--article-background-color: rgba(255, 255, 255, .1);
 	--article-background-color-hover: rgba(255, 255, 255, .2);
 	--text-shadow: 3px 3px 3px rgba(255,255,255,0.4);
+	--box-shadow: 0px 0px 3px rgba(255,255,255,0.4);
 }
 [data-theme=light]{
 	background-color: white;
+	--bg: white;
 	color: black;
+	--color: black;
 	--active: black;
 	--i: black;
 	--selection-color: white;
@@ -51,6 +62,7 @@
 	--article-background-color: #eee;
 	--article-background-color-hover: #ddd;
 	--text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+	--box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
 }
 .active{
 	color: var(--active);
@@ -147,11 +159,12 @@ header{
 	display: block;
 	width: 72px;
 	height: 72px;
-	background-image: url(../img/lt.png);
+	background-image: url(https://ganto.cn/img/lt.png);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	-webkit-animation: 1.5s steps(13) infinite w_logo;
 	animation: 1.5s steps(13) infinite w_logo;
+	cursor: pointer;
 }
 @-webkit-keyframes w_logo {
 	0% {
