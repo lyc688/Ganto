@@ -28,6 +28,13 @@ window.onload = function(){
 			localStorage.setItem("theme","light");
 		}else if(localStorage.getItem("theme") === "light"){
 			localStorage.setItem("theme","dark");
+		}else{
+			const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+			if(darkModeMediaQuery.matches){
+				localStorage.setItem("theme","dark");
+			}else{
+				localStorage.setItem("theme","light");
+			}
 		}
 		localStorage.removeItem("state");
 		judge();
