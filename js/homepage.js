@@ -11,7 +11,7 @@ function judge(){
 }
 (() => {
 	const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-	console.log(darkModeMediaQuery);
+	console.log(darkModeMediaQuery.matches);
 	darkModeMediaQuery.addListener(() => {
 		localStorage.setItem("state","on");
 		judge();
