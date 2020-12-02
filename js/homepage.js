@@ -6,8 +6,9 @@ function judge(){
 	}
 }
 (() => {
+	console.log(window.matchMedia('(prefers-color-scheme)'));
 	if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-		console.log(window.matchMedia('(prefers-color-scheme)').media);
+		
 	}
 	judge();
 })();
