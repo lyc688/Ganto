@@ -11,7 +11,6 @@ function judge(){
 (() => {
 	if (window.matchMedia('(prefers-color-scheme)').matches === true) {
 		console.log("您的浏览器支持prefers-color-scheme！");
-		return;
 	}else{
 		console.log("抱歉！您的浏览器不支持prefers-color-scheme！");
 		if(localStorage.getItem("theme") === "dark"){
