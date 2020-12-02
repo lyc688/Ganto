@@ -6,7 +6,7 @@ function judge(){
 	}
 }
 (() => {
-	console.log(window.matchMedia('(prefers-color-scheme)'));
+	console.log(window.matchMedia('(prefers-color-scheme)').matches);
 	if (window.matchMedia('(prefers-color-scheme)').matches === "true") {
 		return;
 	}else{
