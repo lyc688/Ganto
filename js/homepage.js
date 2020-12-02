@@ -35,7 +35,6 @@ window.onload = function(){
 		document.querySelector(".notice").style.display = "block";
 	}else if(localStorage.getItem("flag") !== "true" && localStorage.getItem("content") === content){
 		localStorage.setItem("flag","false");
-		return;
 	}else if(localStorage.getItem("flag") !== "true" && localStorage.getItem("content") !== content){
 		document.querySelector(".title").innerHTML = title;
 		document.querySelector(".content").innerHTML = content;
