@@ -49,11 +49,11 @@
 	if(zhS < 10){
 		zhS = "0" + zhS
 	}
-	console.log("%c   ____  \n" +
+	console.log("   ____  \n" +
 		"  / ___\\ \n"+
 		" / /   __  \n"+
 		"/ /____\\ \\  \n"+
-		"\\________/ https://ganto.cn \n\n","color: #3742FA;" +
+		"\\________/ https://ganto.cn \n\n" +
 		    fullyear + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds + "\n\n" +
 		    "小站平稳运行" + zhD + "天" + zhH + "小时" + zhM + "分钟" + zhS + "秒钟 了"
 	);
