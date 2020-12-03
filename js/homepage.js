@@ -40,25 +40,21 @@ window.onload = function(){
 		document.querySelector(".title").innerHTML = title;
 		document.querySelector(".content").innerHTML = content;
 		document.querySelector(".notice").style.display = "block";
-		document.querySelector("body::before").style.display = "block";
 	}else if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") !== content){
 		document.querySelector(".title").innerHTML = title;
 		document.querySelector(".content").innerHTML = content;
 		document.querySelector(".notice").style.display = "block";
-		document.querySelector("body::before").style.display = "block";
 	}else if(localStorage.getItem("flag") !== "true" && localStorage.getItem("content") === content){
 		localStorage.setItem("flag","false");
 	}else if(localStorage.getItem("flag") !== "true" && localStorage.getItem("content") !== content){
 		document.querySelector(".title").innerHTML = title;
 		document.querySelector(".content").innerHTML = content;
 		document.querySelector(".notice").style.display = "block";
-		document.querySelector("body::before").style.display = "block";
 		localStorage.setItem("content",content);
 		localStorage.setItem("flag","true");
 	}
 	document.querySelector(".off").onclick = function(){
 		document.querySelector(".notice").style.display = "none";
-		document.querySelector("body::before").style.display = "none";
 		localStorage.setItem("flag","false");
 	}
 	
