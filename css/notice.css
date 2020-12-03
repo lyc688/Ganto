@@ -40,8 +40,9 @@
 	border: 0;
 	color: white;
 	cursor: pointer;
-	padding: 2px 5px;
+	padding: 3px 10px;
 	border-radius: 4px;
+	font-size: 16px;
 }
 .bth .off:hover{
 	background-color: red;
