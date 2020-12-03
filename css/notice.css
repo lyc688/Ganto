@@ -10,7 +10,7 @@
 	bottom: 0;
 	z-index: 9999999;
 	box-shadow: var(--box-shadow);
-	border: 5px solid var(--color);
+	border: 2px solid var(--color);
 }
 .notice .txt{
 	width: 100%;
