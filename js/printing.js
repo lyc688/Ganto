@@ -55,8 +55,9 @@
 		"/ /____\\ \\  \n"+
 		"\\________/ https://ganto.cn \n\n" +
 		    "当前时间" + fullyear + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds + "；\n\n" +
-		    "小站平稳运行" + zhD + "天" + zhH + "小时" + zhM + "分钟" + zhS + "秒钟 了。\n\n" + 
-		    "加载页面花费掉了" + (Math.round(100 * performance.now()) / 100 / 1e3).toFixed(2) + "s。"
+		    "加载页面花费掉了" + (Math.round(100 * performance.now()) / 100 / 1e3).toFixed(2) + "s。\n\n" +
+		    "小站平稳运行" + zhD + "天" + zhH + "小时" + zhM + "分钟" + zhS + "秒钟 了。"
+		    
 	);
 	
 // 	百度统计
