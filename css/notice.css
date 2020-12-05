@@ -63,3 +63,7 @@ body::before {
 	background-color: #ff6b91;
 	box-shadow: 0px 3px 0px #ff4757;
 }
+.off:active{
+	background-color: red;
+	box-shadow: 0px 3px 0px darkred;
+}
