@@ -46,7 +46,7 @@ body::before {
 	padding-top: 5px;
 	justify-content: flex-end;
 }
-.bth .off{
+.off{
 	display: inline-block;
 	width: 100px;
 	height: 40px;
@@ -54,11 +54,12 @@ body::before {
 	text-align: center;
 	line-height: 40px;
 	border-radius: 20px;
-	background-color: #11C6C1;
+	background-color: #57606f;
 	color: white;
-	box-shadow: 0px 3px 0px #0F8B97;
+	box-shadow: 0px 3px 0px #2f3542;
 	cursor: pointer;
 }
-.bth .off:hover{
-	background-color: red;
+.off:hover{
+	background-color: #a4b0be;
+	box-shadow: 0px 3px 0px #747d8c;
 }
