@@ -54,12 +54,12 @@ body::before {
 	text-align: center;
 	line-height: 40px;
 	border-radius: 20px;
-	background-color: #11C6C1;
+	background-color: #1e90ff;
 	color: white;
-	box-shadow: 0px 3px 0px #0F8B97;
+	box-shadow: 0px 3px 0px #3742fa;
 	cursor: pointer;
 }
 .off:hover{
-	background-color: #70a1ff;
-	box-shadow: 0px 3px 0px #1e90ff;
+	background-color: #ff6b91;
+	box-shadow: 0px 3px 0px #ff4757;
 }
