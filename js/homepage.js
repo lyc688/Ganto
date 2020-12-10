@@ -24,14 +24,16 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
-	
-	if(localStorage.getItem("theme") === "dark"){
+	function Color(){
+		if(localStorage.getItem("theme") === "dark"){
 		document.querySelector(".dark").style.borderColor = "#3888df";
-	}else if(localStorage.getItem("theme") === "light"){
-		document.querySelector(".light").style.borderColor = "#3888df";
-	}else if(localStorage.getItem("theme") === "auto"){
-		document.querySelector(".auto").style.borderColor = "#3888df";
+		}else if(localStorage.getItem("theme") === "light"){
+			document.querySelector(".light").style.borderColor = "#3888df";
+		}else if(localStorage.getItem("theme") === "auto"){
+			document.querySelector(".auto").style.borderColor = "#3888df";
+		}
 	}
+	Color();
 	
 	//点击auto窗口，删除thml标签data-theme属性
 	document.querySelector(".auto").onclick = function(){
@@ -48,16 +50,19 @@ window.onload = function(){
 			}
 		}
 		judge();
+		Color();
 	}
 	
 	// 点击切换深色/浅色模式
 	document.querySelector(".light").onclick = function(){
 		localStorage.setItem("theme","light");
 		judge();
+		Color();
 	}
 	document.querySelector(".dark").onclick = function(){
 		localStorage.setItem("theme","dark");
 		judge();
+		Color();
 	}
 	
 	// 通知
