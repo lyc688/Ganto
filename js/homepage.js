@@ -1,13 +1,10 @@
 function judge(){
 	if(localStorage.getItem("theme") === "dark"){
 		document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
-		document.querySelector(".dark").style.borderColor = "#3888df";
 	}else if(localStorage.getItem("theme") === "light"){
 		document.getElementsByTagName("html")[0].setAttribute("data-theme","light");
-		document.querySelector(".light").style.borderColor = "#3888df";
 	}else if(localStorage.getItem("theme") === "auto"){
 		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
-		document.querySelector(".auto").style.borderColor = "#3888df";
 	}else{
 		localStorage.setItem("theme","auto");
 	}
@@ -27,6 +24,14 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
+	
+	if(localStorage.getItem("theme") === "dark"){
+		document.querySelector(".dark").style.borderColor = "#3888df";
+	}else if(localStorage.getItem("theme") === "light"){
+		document.querySelector(".light").style.borderColor = "#3888df";
+	}else if(localStorage.getItem("theme") === "auto"){
+		document.querySelector(".auto").style.borderColor = "#3888df";
+	}
 	
 	//点击auto窗口，删除thml标签data-theme属性
 	document.querySelector(".auto").onclick = function(){
