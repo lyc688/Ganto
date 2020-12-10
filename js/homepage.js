@@ -39,7 +39,7 @@ window.onload = function(){
 	
 	// 通知
 	var title = "小站已经适配深色模式";
-	var content = "单击辣条可以切换深色/浅色模式，也可自动响应系统的深色/浅色模式。但是依然遵循人为喜好优先的原则。";
+	var content = "在“关于”页 -> “模式”栏切换。";
 	//localStorage.setItem("flag","true"); // 如果需要强制一直显示通知，请取消此条代码注释
 	if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") === content){
 		document.querySelector(".title").innerHTML = title;
