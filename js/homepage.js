@@ -46,7 +46,8 @@ window.onload = function(){
 		if (window.matchMedia('(prefers-color-scheme)').matches === true) {
 			localStorage.setItem("theme","auto");
 		}else{
-			console.log("抱歉！您的浏览器不支持prefers-color-scheme！即auto模式无法生效，已自动设置为Light模式。");
+			alert("抱歉！您的浏览器不支持prefers-color-scheme！即auto模式无法生效！");
+			console.log("抱歉！您的浏览器不支持prefers-color-scheme！即auto模式无法生效！");
 			if(localStorage.getItem("theme") === "dark"){
 				document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
 			}else if(localStorage.getItem("theme") === "light"){
