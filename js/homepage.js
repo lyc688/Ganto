@@ -8,6 +8,8 @@ function judge(){
 	}else if(localStorage.getItem("theme") === "auto"){
 		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
 		document.querySelector(".auto").style.borderColor = "#3888df";
+	}else{
+		localStorage.setItem("theme","auto");
 	}
 }
 (() => {
