@@ -1,8 +1,13 @@
 function judge(){
 	if(localStorage.getItem("theme") === "dark"){
 		document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
+		document.querySelector(".dark").style.borderColor = "#3888df";
 	}else if(localStorage.getItem("theme") === "light"){
 		document.getElementsByTagName("html")[0].setAttribute("data-theme","light");
+		document.querySelector(".light").style.borderColor = "#3888df";
+	}else if(localStorage.getItem("theme") === "auto"){
+		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
+		document.querySelector(".auto").style.borderColor = "#3888df";
 	}
 }
 (() => {
@@ -23,8 +28,19 @@ window.onload = function(){
 	
 	//点击auto窗口，删除thml标签data-theme属性
 	document.querySelector(".auto").onclick = function(){
-		localStorage.setItem("theme","auto");
-		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
+		if (window.matchMedia('(prefers-color-scheme)').matches === true) {
+			localStorage.setItem("theme","auto");
+		}else{
+			console.log("抱歉！您的浏览器不支持prefers-color-scheme！即auto模式无法生效，已自动设置为Light模式。");
+			if(localStorage.getItem("theme") === "dark"){
+				document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
+			}else if(localStorage.getItem("theme") === "light"){
+				document.getElementsByTagName("html")[0].setAttribute("data-theme","light");
+			}else{
+				localStorage.setItem("theme","light");
+			}
+		}
+		judge();
 	}
 	
 	// 点击切换深色/浅色模式
