@@ -320,3 +320,28 @@ span.vnick,a.vnick {
 .cevno>.article:hover{
 	background-color: var(--article-background-color-hover);
 }
+.theme-btn{
+	width: 100%;
+	max-width: 470px;
+	display: flex;
+}
+.theme-btn .btn{
+	width: 150px;
+	border: 1px solid #30363d;
+	border-radius: 6px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.theme-btn .dark{
+	margin-right: 0;
+}
+.theme-btn .btn img{
+	width: 100%;
+	border-bottom: 1px solid #30363D;
+}
+.theme-btn .btn span{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	padding: 6px 0;
+}
