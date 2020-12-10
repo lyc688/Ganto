@@ -24,13 +24,19 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
-	function Color(){
+	function themeBorderColorActive(){
 		if(localStorage.getItem("theme") === "dark"){
-		document.querySelector(".dark").style.borderColor = "#3888df";
+			document.querySelector(".dark").style.borderColor = "#3888df";
+			document.querySelector(".light").style.borderColor = "";
+			document.querySelector(".auto").style.borderColor = "";
 		}else if(localStorage.getItem("theme") === "light"){
 			document.querySelector(".light").style.borderColor = "#3888df";
+			document.querySelector(".dark").style.borderColor = "";
+			document.querySelector(".auto").style.borderColor = "";
 		}else if(localStorage.getItem("theme") === "auto"){
 			document.querySelector(".auto").style.borderColor = "#3888df";
+			document.querySelector(".dark").style.borderColor = "";
+			document.querySelector(".light").style.borderColor = "";
 		}
 	}
 	Color();
@@ -50,19 +56,19 @@ window.onload = function(){
 			}
 		}
 		judge();
-		Color();
+		themeBorderColorActive();
 	}
 	
 	// 点击切换深色/浅色模式
 	document.querySelector(".light").onclick = function(){
 		localStorage.setItem("theme","light");
 		judge();
-		Color();
+		themeBorderColorActive();
 	}
 	document.querySelector(".dark").onclick = function(){
 		localStorage.setItem("theme","dark");
 		judge();
-		Color();
+		themeBorderColorActive();
 	}
 	
 	// 通知
