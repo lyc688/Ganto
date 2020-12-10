@@ -27,16 +27,26 @@ window.onload = function(){
 	function themeBorderColorActive(){
 		if(localStorage.getItem("theme") === "dark"){
 			document.querySelector(".dark").style.borderColor = "#3888df";
+			document.querySelector(".dark").getElementsByTagName("img")[0].style.borderColor = "#3888df";
 			document.querySelector(".light").style.borderColor = "";
+			document.querySelector(".light").getElementsByTagName("img")[0].style.borderColor = "";
 			document.querySelector(".auto").style.borderColor = "";
+			document.querySelector(".auto").getElementsByTagName("img")[0].style.borderColor = "";
 		}else if(localStorage.getItem("theme") === "light"){
 			document.querySelector(".light").style.borderColor = "#3888df";
+			document.querySelector(".light").getElementsByTagName("img")[0].style.borderColor = "#3888df";
 			document.querySelector(".dark").style.borderColor = "";
+			document.querySelector(".dark").getElementsByTagName("img")[0].style.borderColor = "";
 			document.querySelector(".auto").style.borderColor = "";
+			document.querySelector(".auto").getElementsByTagName("img")[0].style.borderColor = "";
 		}else if(localStorage.getItem("theme") === "auto"){
 			document.querySelector(".auto").style.borderColor = "#3888df";
+			document.querySelector(".auto").getElementsByTagName("img")[0].style.borderColor = "#3888df";
 			document.querySelector(".dark").style.borderColor = "";
+			document.querySelector(".dark").getElementsByTagName("img")[0].style.borderColor = "";
 			document.querySelector(".light").style.borderColor = "";
+			document.querySelector(".light").getElementsByTagName("img")[0].style.borderColor = "";
+			
 		}
 	}
 	themeBorderColorActive();
