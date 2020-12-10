@@ -324,6 +324,7 @@ span.vnick,a.vnick {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 10px;
 }
 .theme-btn .btn{
 	width: 150px;
