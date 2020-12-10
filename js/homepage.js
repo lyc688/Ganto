@@ -23,6 +23,7 @@ window.onload = function(){
 	
 	//点击auto窗口，删除thml标签data-theme属性
 	document.querySelector(".auto").onclick = function(){
+		localStorage.setItem("theme","auto");
 		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
 	}
 	
