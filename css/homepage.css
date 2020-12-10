@@ -322,12 +322,12 @@ span.vnick,a.vnick {
 }
 .theme-btn{
 	width: 100%;
-	max-width: 470px;
 	display: flex;
+	justify-content: space-between;
 }
 .theme-btn .btn{
 	width: 150px;
-	border: 1px solid #30363d;
+	border: 1px solid var(--color);
 	border-radius: 6px;
 	overflow: hidden;
 	margin-right: 10px;
@@ -337,7 +337,7 @@ span.vnick,a.vnick {
 }
 .theme-btn .btn img{
 	width: 100%;
-	border-bottom: 1px solid #30363D;
+	border-bottom: 1px solid var(--color);
 }
 .theme-btn .btn span{
 	display: block;
