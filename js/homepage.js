@@ -20,17 +20,33 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
-	// 点击切换深色/浅色模式
-	document.querySelector(".toggle").onclick = function(){
-		if(localStorage.getItem("theme") === "dark"){
-			localStorage.setItem("theme","light");
-		}else if(localStorage.getItem("theme") === "light"){
-			localStorage.setItem("theme","dark");
-		}else{
-			localStorage.setItem("theme","dark");
-		}
-		judge();
+	
+	//点击auto窗口，删除thml标签data-theme属性
+	document.querySelector(".auto").onclick = function(){
+		document.getElementsByTagName("html")[0].removeAttribute("data-theme");
 	}
+	
+	// 点击切换深色/浅色模式
+	document.querySelector(".light").onclick = function(){
+		localStorage.setItem("theme","light");
+		judge();
+// 		document.getElementsByTagName("html")[0].setAttribute("data-theme","light");
+	}
+	document.querySelector(".dark").onclick = function(){
+		localStorage.setItem("theme","dark");
+		judge();
+// 		document.getElementsByTagName("html")[0].setAttribute("data-theme","dark");
+	}
+// 	document.querySelector(".toggle").onclick = function(){
+// 		if(localStorage.getItem("theme") === "dark"){
+// 			localStorage.setItem("theme","light");
+// 		}else if(localStorage.getItem("theme") === "light"){
+// 			localStorage.setItem("theme","dark");
+// 		}else{
+// 			localStorage.setItem("theme","dark");
+// 		}
+// 		judge();
+// 	}
 	
 	// 通知
 	var title = "小站已经适配深色模式";
