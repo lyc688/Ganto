@@ -39,7 +39,7 @@ window.onload = function(){
 			document.querySelector(".light").style.borderColor = "";
 		}
 	}
-	Color();
+	themeBorderColorActive();
 	
 	//点击auto窗口，删除thml标签data-theme属性
 	document.querySelector(".auto").onclick = function(){
