@@ -24,6 +24,7 @@ function judge(){
 	judge();
 })();
 window.onload = function(){
+	console.log("homepage.js");
 	// 通知
 	var title = "小站已经适配深色模式";
 	var content = "在“关于”页 -> “模式”栏切换。";
