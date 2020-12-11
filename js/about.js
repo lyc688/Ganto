@@ -1,4 +1,5 @@
 window.onload = function(){
+  console.log("about.js");
   function themeBorderColorActive(){
       if(localStorage.getItem("theme") === "dark"){
         document.querySelector(".dark").style.borderColor = "#3888df";
