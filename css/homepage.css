@@ -332,6 +332,7 @@ span.vnick,a.vnick {
 	border-radius: 6px;
 	overflow: hidden;
 	margin-right: 10px;
+	cursor: pointer;
 }
 .theme-btn .dark{
 	margin-right: 0;
