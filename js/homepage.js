@@ -84,8 +84,8 @@ window.onload = function(){
 		  }
 	}
 	// 通知
-	var title = "小站已经适配深色模式";
-	var content = "在“关于”页 -> “模式”栏切换。";
+	var title = "南京大屠杀死难者国家公祭日12.13";
+	var content = "牢记历史、勿忘国耻、祭奠亡灵";
 	//localStorage.setItem("flag","true"); // 如果需要强制一直显示通知，请取消此条代码注释
 	if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") === content){
 		document.querySelector(".title").innerHTML = title;
