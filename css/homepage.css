@@ -2,8 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%);
 }
 @media (prefers-color-scheme: dark){
 	:root{
@@ -86,6 +84,8 @@ body{
 	bottom: 0;
 	left: 0;
 	min-width: 240px;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
 	/*-moz-user-select:none;*/ /*火狐*/
 	/*/*-webkit-user-select:none;*/ /*webkit浏览器*/
 	/*-ms-user-select:none;*/ /*IE10*/
