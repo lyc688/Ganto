@@ -1,11 +1,12 @@
 .notice{
-	width: 100%;
+/* 	width: 100%; */
 	max-width: 400px;
 	background-color: var(--bg);
 	color: var(--color);
 	border-radius: 5px;
 	display: none;
 	padding: 10px;
+    	margin: 10px;
 	position: fixed;
 	bottom: 0;
 	z-index: 9999999;
