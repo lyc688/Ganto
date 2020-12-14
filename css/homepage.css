@@ -341,6 +341,7 @@ span.vnick,a.vnick {
 	margin-right: 0;
 }
 .theme-btn .btn img{
+	display: block;
 	width: 100%;
 	border-bottom: 1px solid var(--color);
 }
