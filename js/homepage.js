@@ -84,7 +84,7 @@ window.onload = function(){
 		  }
 	}
 	// 通知
-	var title = "南京大屠杀死难者国家公祭日12.13";
+	var title = "南京大屠杀死难者国家公祭日\n12.13";
 	var content = "牢记历史、勿忘国耻、祭奠亡灵";
 	//localStorage.setItem("flag","true"); // 如果需要强制一直显示通知，请取消此条代码注释
 	if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") === content){
