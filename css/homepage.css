@@ -167,7 +167,6 @@ header{
 	background-size: auto 100%;
 	-webkit-animation: 1.5s steps(13) infinite w_logo;
 	animation: 1.5s steps(13) infinite w_logo;
-	cursor: pointer;
 }
 @-webkit-keyframes w_logo {
 	0% {
