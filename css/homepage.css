@@ -12,7 +12,7 @@
 		color: white;
 		--color: white;
 		--active: white;
-		--i: #4c4c4c;
+		--i: #21262d;
 		--selection-color: black;
 		--selection-background-color: white;
 		--article-background-color: rgba(255, 255, 255, .1);
@@ -45,7 +45,7 @@
 	color: white;
 	--color: white;
 	--active: white;
-	--i: #4c4c4c;
+	--i: #21262d;
 	--selection-color: black;
 	--selection-background-color: white;
 	--article-background-color: rgba(255, 255, 255, .1);
