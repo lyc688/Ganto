@@ -284,6 +284,7 @@ footer .tim{
 	font-size: 12px;
 }
 .tim .pepsi img{
+	width: 30px;
 	vertical-align: bottom;
 }
 /*评论系统全部字体font-weight: 500;*/
