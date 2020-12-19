@@ -290,6 +290,10 @@ footer {
     	margin-top: 10px;
 	font-size: 12px;
 }
+.me a{
+    	color: var(--color);
+	text-decoration: none;
+}
 /*评论系统全部字体font-weight: 500;*/
 .comment{
 	font-weight: 500;
