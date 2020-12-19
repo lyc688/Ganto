@@ -13,21 +13,9 @@
 		<link rel="stylesheet" type="text/css" href="css/top.css">
 		<script src="js/homepage.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/printing.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/top.js" type="text/javascript" charset="utf-8"></script>
 		<script src='//cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js'></script>
 		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-		<script type="text/javascript">
-			window.onscroll = function(e){
-				if(e.path[1].visualViewport.pageTop >= 500){
-					document.querySelector(".top").style.display = "block";
-				}else{
-					document.querySelector(".top").style.display = "none";
-				}
-			}
-			document.querySelector(".top").onclick = function(){
-				document.body.scrollTop = 0;
-				document.documentElement.scrollTop = 0;
-			}
-		</script>
 		<script type="text/javascript">
 			localStorage.setItem("page","about");
 		</script>
@@ -110,7 +98,7 @@
 					<span>Powered by <a title="Ganto" href="/">Ganto</a> &copy;2020</span>
 				</div>
 			</footer>
-			<div class="top">
+			<div class="top" onclick="top()>
 				<svg t="1608389750687" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3014" width="50" height="50"><path d="M511.609097 961.619254" p-id="3015" fill="#707070"></path><path d="M846.620104 753.070474 511.629563 406.696676 172.304298 757.600651l0-0.017396c-11.521404 11.462053-27.132964 18.532075-44.375673 18.532075-35.320437 0-63.923892-29.600155-63.923892-66.109674 0-17.817808 6.831592-33.986045 17.917068-45.886073l0 0 383.580189-396.650879 0 0c11.643178-12.456706 27.930119-20.2236 46.006823-20.2236l0.12075 0 0.156566 0c18.076704 0 34.406624 7.766894 46.006823 20.2236l0.038886 0 383.54642 396.650879-0.160659 0.160659c11.042497 11.877515 17.796318 27.969005 17.796318 45.725414 0 36.509519-28.605501 66.109674-63.923892 66.109674C875.700419 776.11533 858.342076 767.175727 846.620104 753.070474L846.620104 753.070474zM846.620104 753.070474" p-id="3016" fill="#707070"></path></svg>
 			</div>
 		</main>
