@@ -13,6 +13,7 @@
     color: var(--color);
     box-shadow: var(--box-shadow);
     border: 1px solid var(--color);
+    display: none;
   }
   .top svg{
     width: 50%;
