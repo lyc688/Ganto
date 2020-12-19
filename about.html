@@ -17,11 +17,12 @@
 		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 		<script type="text/javascript">
 			window.onscroll = function(e){
-				if(e.path[1].visualViewport.pageTop >= 500){
-					document.querySelector(".top").style.display = "block";
-				}else{
-					document.querySelector(".top").style.display = "none";
-				}
+				console.log(document.documentElement.scrollTop || document.body.scrollTop);
+// 				if(e.path[1].visualViewport.pageTop >= 500){
+// 					document.querySelector(".top").style.display = "block";
+// 				}else{
+// 					document.querySelector(".top").style.display = "none";
+// 				}
 			}
 			localStorage.setItem("page","about");
 		</script>
