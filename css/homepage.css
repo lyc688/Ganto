@@ -3,6 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+img{
+	vertical-align: bottom;
+}
 @media (prefers-color-scheme: dark){
 	:root{
 /* 		background: #35363A;
