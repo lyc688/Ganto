@@ -283,12 +283,12 @@ footer {
 	padding: 35px;
 	text-align: center;
 }
-footer .tim{
+.support img{
+	height: 20px;
+}
+.me{
     	margin-top: 10px;
 	font-size: 12px;
-}
-.tim .support img{
-	height: 20px;
 }
 /*评论系统全部字体font-weight: 500;*/
 .comment{
