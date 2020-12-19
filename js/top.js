@@ -1,4 +1,4 @@
-window.onscroll = function(e){
+document.onscroll = function(e){
   if(e.path[1].visualViewport.pageTop >= 500){
     document.querySelector(".top").style.display = "block";
   }else{
