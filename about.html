@@ -13,9 +13,21 @@
 		<link rel="stylesheet" type="text/css" href="css/top.css">
 		<script src="js/homepage.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/printing.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/top.js" type="text/javascript" charset="utf-8"></script>
 		<script src='//cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js'></script>
 		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+		<script type="text/javascript">
+			window.onscroll = function(e){
+				if(e.path[1].visualViewport.pageTop >= 500){
+					document.querySelector(".top").style.display = "block";
+				}else{
+					document.querySelector(".top").style.display = "none";
+				}
+			}
+			document.querySelector(".top").onclick = function(){
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
 		<script type="text/javascript">
 			localStorage.setItem("page","about");
 		</script>
