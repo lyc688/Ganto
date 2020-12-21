@@ -84,6 +84,9 @@ img{
 body::-webkit-scrollbar {
 	display: none;
 }
+body::-webkit-scrollbar {
+	width: 0!important;
+}
 body{
 	position: absolute;
 	top: 0;
