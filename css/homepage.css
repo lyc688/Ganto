@@ -3,6 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html::-webkit-scrollbar{
+	display: none;
+}
+html{
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
 img{
 	vertical-align: bottom;
 }
@@ -80,12 +87,6 @@ img{
 .cevno i::selection{
 	color: white;
 	background-color: #3742FA;
-}
-body::-webkit-scrollbar {
-	display: none;
-}
-body::-webkit-scrollbar {
-	width: 0!important;
 }
 body{
 	position: absolute;
