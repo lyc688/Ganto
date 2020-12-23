@@ -146,10 +146,7 @@ header{
 }
 .name nav .i{
 	display: block;
-/* 	font-size: 50px;
-	letter-spacing: 5px;
-	text-shadow: var(--text-shadow);
-	font-weight: 300; */
+	font-size: 12px;
 }
 .function{
 	width: 100%;
