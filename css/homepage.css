@@ -147,6 +147,7 @@ header{
 .name nav .i{
 	display: block;
 	font-size: 12px;
+	margin-left: 10px;
 }
 .function{
 	width: 100%;
