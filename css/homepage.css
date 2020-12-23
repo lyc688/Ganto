@@ -145,6 +145,7 @@ header{
 	font-weight: 300;
 }
 .name nav .i{
+	display: block;
 /* 	font-size: 50px;
 	letter-spacing: 5px;
 	text-shadow: var(--text-shadow);
