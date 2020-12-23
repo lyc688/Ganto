@@ -138,11 +138,17 @@ header{
 	width: 100%;
 	max-width: 666px;
 }
-.name nav b{
+.name nav .g{
 	font-size: 50px;
 	letter-spacing: 5px;
 	text-shadow: var(--text-shadow);
 	font-weight: 300;
+}
+.name nav .i{
+/* 	font-size: 50px;
+	letter-spacing: 5px;
+	text-shadow: var(--text-shadow);
+	font-weight: 300; */
 }
 .function{
 	width: 100%;
