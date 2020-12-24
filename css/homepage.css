@@ -147,7 +147,6 @@ header{
 .name nav .i{
 	display: block;
 	font-size: 12px;
-	margin: 0px 10px;
 }
 .function{
 	width: 100%;
@@ -161,6 +160,12 @@ header{
 .function a{
 	text-transform: capitalize;
     	margin: 10px;
+}
+.function a:nth-child(1)
+	margin-left: 0;
+}
+.function a:nth-child(4){
+	margin-right: 0;
 }
 .demo{
 	display: flex;
