@@ -84,8 +84,8 @@ window.onload = function(){
 		  }
 	}
 	// 通知
-	var title = "学习至上";
-	var content = "只要学不死，就往死里学";
+	var title = "";
+	var content = "";
 	//localStorage.setItem("flag","true"); // 如果需要强制一直显示通知，请取消此条代码注释
 	if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") === content){
 		document.querySelector(".title").innerHTML = title;
