@@ -89,11 +89,11 @@ img{
 	background-color: #3742FA;
 }
 body{
-	position: absolute;
+/* 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 0;
+	left: 0; */
 	min-width: 240px;
 	/*-moz-user-select:none;*/ /*火狐*/
 	/*/*-webkit-user-select:none;*/ /*webkit浏览器*/
