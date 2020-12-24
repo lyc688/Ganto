@@ -84,8 +84,8 @@ window.onload = function(){
 		  }
 	}
 	// 通知
-	var title = "";
-	var content = "";
+	var title = "小站已经适配深色模式O.o";
+	var content = "小站已经适配深色模式，请再“关于页 ——》 模式栏”进行切换模式。";
 	//localStorage.setItem("flag","true"); // 如果需要强制一直显示通知，请取消此条代码注释
 	if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") === content){
 		document.querySelector(".title").innerHTML = title;
