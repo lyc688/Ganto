@@ -13,6 +13,12 @@ html{
 img{
 	vertical-align: bottom;
 }
+@font-face {
+      font-family: 'MFShangYa';
+      src: url('../font/MFShangYa.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
 @media (prefers-color-scheme: dark){
 	:root{
 /* 		background: #35363A;
