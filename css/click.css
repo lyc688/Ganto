@@ -11,7 +11,7 @@
 }
 @keyframes click{
 	0%{
-		transform: scale(.5);
+		transform: scale(.1);
 		opacity: 1;
 	}
 	100%{
