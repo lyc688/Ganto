@@ -14,10 +14,8 @@ img{
 	vertical-align: bottom;
 }
 @font-face {
-      font-family: 'MFShangYa';
-      src: url('https://ganto.cn/font/MFShangYa.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
+      font-family: MFShangYa;
+      src: url('https://ganto.cn/font/MFShangYa.ttf');
 }
 @media (prefers-color-scheme: dark){
 	:root{
