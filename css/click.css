@@ -1,4 +1,4 @@
-span{
+.click{
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -7,9 +7,9 @@ span{
 	position: absolute;
 	margin-top: -25px;
 	margin-left: -25px;
-	animation: span .5s linear infinite;
+	animation: click .5s linear infinite;
 }
-@keyframes span{
+@keyframes click{
 	0%{
 		transform: scale(.5);
 		opacity: 1;
