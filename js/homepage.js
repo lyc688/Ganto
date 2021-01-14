@@ -85,7 +85,7 @@ window.onload = function(){
 	}
 	// 通知
 	var title = "新年快乐！";
-	var content = "2021年新年快乐！";
+	var content = "2021年新年快乐！在新的一年里祝大家：财源滚滚，身体健康，万事如意，家庭和睦。";
 	//localStorage.setItem("flag","true"); // 如果需要强制一直显示通知，请取消此条代码注释
 	if(localStorage.getItem("flag") === "true" && localStorage.getItem("content") === content){
 		document.querySelector(".title").innerHTML = title;
