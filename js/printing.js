@@ -59,15 +59,4 @@
 		    "小站平稳运行 " + zhD + "天" + zhH + "小时" + zhM + "分钟" + zhS + "秒钟 了。"
 		    
 	);
-	
-// 	百度统计
-	var _hmt = _hmt || [];
-	(function() {
-		var hm = document.createElement("script");
-		hm.src = "https://hm.baidu.com/hm.js?02903c6e6f5f09461f68d07b7887f5ea";
-		var s = document.getElementsByTagName("script")[0]; 
-		s.parentNode.insertBefore(hm, s);
-	})();
-
-	
 })();
