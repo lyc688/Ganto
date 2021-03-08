@@ -94,13 +94,22 @@ body{
 	right: 0;
 	bottom: 0;
 	left: 0; */
-	min-width: 240px;
+/* 	min-width: 240px; */
 	/*-moz-user-select:none;*/ /*火狐*/
 	/*/*-webkit-user-select:none;*/ /*webkit浏览器*/
 	/*-ms-user-select:none;*/ /*IE10*/
 	/*-khtml-user-select:none;*/ /*早期浏览器*/
 	/*user-select:none;*/
 	/*-webkit-touch-callout: none;*/
+	background: url(https://cn.bing.com/th?id=OHR.PadarIsland_ZH-CN3753026244_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 main,.notice{
 	/*filter: grayscale(100%);*/
@@ -114,6 +123,8 @@ main{
     	background-position: center;
     	background-size: cover;
     	background-repeat: no-repeat; */
+	backdrop-filter: saturate(150%) blur(20px);
+    	-webkit-backdrop-filter: saturate(150%) blur(20px);
 }
 a{
 	display: inline-block;
