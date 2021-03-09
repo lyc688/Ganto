@@ -158,6 +158,8 @@ header{
 .function nav{
 	width: 100%;
 	max-width: 666px;
+	border-bottom: 1px solid #c9c9c9;
+	border-top: 1px solid #c9c9c9;
 }
 .function a{
 	text-transform: capitalize;
@@ -169,7 +171,7 @@ header{
 .function a:nth-child(5){
 	margin-right: 0;
 }
-.demo{
+/* .demo{
 	display: flex;
 	justify-content: center;
 	margin: 0 20px;
@@ -207,7 +209,7 @@ header{
 	100% {
 		background-position-x: -936px;
 	}
-}
+} */
 @media (max-width: 800px) {
 	header{
 		text-align: center;
