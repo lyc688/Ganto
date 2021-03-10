@@ -151,9 +151,9 @@ header{
 	font-size: 12px;
 }
 .function{
-	width: 100%;
 	display: flex;
 	justify-content: center;
+	margin: 0px 20px;
 }
 .function nav{
 	width: 100%;
