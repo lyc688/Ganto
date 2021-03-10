@@ -1,5 +1,5 @@
 function a(e){
-	console.log(e.pageX, e.pageY);
+// 	console.log(e.pageX, e.pageY);
 	const body = document.querySelector("body");
 	const span = document.createElement("span");
 	const i = document.createElement("i");
