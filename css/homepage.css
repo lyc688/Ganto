@@ -339,17 +339,17 @@ span.vnick,a.vnick {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 .cevno>.article {
-	background-color: var(--article-background-color);
-	padding: 20px;
+/* 	background-color: var(--article-background-color);
+	padding: 20px; */
 	margin-bottom: 10px;
 	border-radius: 5px;
 }
 .cevno>.article:last-child {
 	margin-bottom: 0px;
 }
-.cevno>.article:hover{
+/* .cevno>.article:hover{
 	background-color: var(--article-background-color-hover);
-}
+} */
 .theme-btn{
 	width: 100%;
 	display: flex;
