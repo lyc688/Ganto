@@ -78,9 +78,8 @@ section .i0{
 .i1{
 	position: relative;
 }
-.i1::after{
+.imgLogo{
 	display: block;
-	content: "";
 	width: 100px;
 	height: 130px;
 	background: url(../img/girl.png);
