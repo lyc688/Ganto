@@ -79,11 +79,12 @@ section .i0{
 	position: relative;
 }
 .i1::after{
-   	display: block;
+	display: block;
 	content: "";
 	width: 100px;
 	height: 130px;
-	background: url(../img/r.png);
+	background: url(../img/dogl.jpg);
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
