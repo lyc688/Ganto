@@ -34,5 +34,19 @@
 				</div>
 			</section>
 		</main>
+		
+		<script>
+			let arr = ["https://ganto.cn/b/img/girl.png", "https://ganto.cn/b/img/boy.png", "https://ganto.cn/b/img/r.png", "https://ganto.cn/b/img/dogl.jpg"];
+			let i = 0;
+			document.querySelector(".imgLogo").ondblclick = () => {
+				if(i < 3){
+					i++;
+				}else{
+					i=0;
+				}
+				document.querySelector(".imgLogo").style.backgroundImage = "url(" + arr[i] + ")";
+				console.log(i,arr[i]);
+			}
+		</script>
 	</body>
 </html>
