@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 html::-webkit-scrollbar{
-	display: none;
+/* 	display: none; */
 }
 html{
 	scrollbar-width: none;
@@ -83,10 +83,6 @@ img{
 ::selection{
 	color: var(--selection-color);
 	background-color: var(--selection-background-color);
-}
-.cevno i::selection{
-	color: white;
-	background-color: #3742FA;
 }
 body{
 /* 	position: absolute;
