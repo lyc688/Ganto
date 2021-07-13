@@ -31,6 +31,7 @@ img{
 		--text-shadow: 3px 3px 3px rgba(255,255,255,0.4);
 		--box-shadow: 0px 0px 10px rgba(255,255,255,0.4);
 		--mark: dark;
+		--bgColor: rgba(0,0,0,.3);
 	}
 }
 @media (prefers-color-scheme: light){
@@ -48,6 +49,7 @@ img{
 		--text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
 		--box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
 		--mark: light;
+		--bgColor: rgba(255,255,255,.3);
 	}
 }
 [data-theme=dark]{
@@ -67,6 +69,7 @@ img{
 	--text-shadow: 3px 3px 3px rgba(255,255,255,0.4);
 	--box-shadow: 0px 0px 10px rgba(255,255,255,0.4);
 	--mark: dark;
+	--bgColor: rgba(0,0,0,.3);
 }
 [data-theme=light]{
 	background-color: white;
@@ -82,6 +85,7 @@ img{
 	--text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
 	--box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
 	--mark: light;
+	--bgColor: rgba(255,255,255,.3);
 }
 .active{
 	color: var(--active);
@@ -122,6 +126,7 @@ main{
     	background-repeat: no-repeat; */
 	backdrop-filter: saturate(100%) blur(10px);
     	-webkit-backdrop-filter: saturate(100%) blur(10px);
+	background-color: var(--bgColor);
 }
 a{
 	display: inline-block;
