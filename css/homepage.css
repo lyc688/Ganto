@@ -120,8 +120,8 @@ main{
     	background-position: center;
     	background-size: cover;
     	background-repeat: no-repeat; */
-	backdrop-filter: saturate(150%) blur(10px);
-    	-webkit-backdrop-filter: saturate(150%) blur(10px);
+	backdrop-filter: saturate(100%) blur(10px);
+    	-webkit-backdrop-filter: saturate(100%) blur(10px);
 }
 a{
 	display: inline-block;
