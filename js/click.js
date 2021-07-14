@@ -2,11 +2,11 @@ function a(e){
 // 	console.log(e.pageX, e.pageY);
 	const body = document.querySelector("body");
 	const span = document.createElement("span");
-	const i = document.createElement("i");
+// 	const i = document.createElement("i");
 	span.classList.add("click");
 	span.style.top = e.pageY + "px";
 	span.style.left = e.pageX + "px";
-	span.append(i);
+// 	span.append(i);
 	body.append(span);
 	setTimeout(() => {
 		span.remove();
