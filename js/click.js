@@ -1,5 +1,5 @@
 function a(e){
-	// console.log(e.pageX, e.pageY);
+// 	console.log(e.pageX, e.pageY);
 	const body = document.querySelector("body");
 	const span = document.createElement("span");
 	span.classList.add("click");
@@ -8,9 +8,8 @@ function a(e){
 	body.append(span);
 	setTimeout(() => {
 		span.remove();
-	}, 750);
+	}, 500);
 }
 document.querySelector("html").onclick = function(e){
 	a(e);
-	// console.log(e);
 }
