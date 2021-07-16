@@ -10,7 +10,7 @@ function gClick(gEvent){
 		span.remove();
 	}, 800);
 }
-document.querySelector("html").onmousemove = function(gEvent){
+document.querySelector("html").onclick = function(gEvent){
 	gClick(gEvent);
 	// console.log(gEvent);
 }
