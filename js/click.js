@@ -1,15 +1,16 @@
-function a(e){
-// 	console.log(e.pageX, e.pageY);
+function gClick(gEvent){
+// 	console.log(gEvent.pageX, gEvent.pageY);
 	const body = document.querySelector("body");
 	const span = document.createElement("span");
-	span.classList.add("click");
-	span.style.top = e.pageY + "px";
-	span.style.left = e.pageX + "px";
+	span.classList.add("gClick");
+	span.style.top = gEvent.pageY + "px";
+	span.style.left = gEvent.pageX + "px";
 	body.append(span);
 	setTimeout(() => {
 		span.remove();
-	}, 500);
+	}, 750);
 }
-document.querySelector("html").onclick = function(e){
-	a(e);
+document.querySelector("html").onmousemove = function(gEvent){
+	gClick(gEvent);
+// 	console.log(gEvent);
 }
