@@ -1,5 +1,5 @@
 function gClick(gEvent){
-// 	console.log(gEvent.pageX, gEvent.pageY);
+	console.log(gEvent.pageX, gEvent.pageY);
 	const body = document.querySelector("body");
 	const span = document.createElement("span");
 	span.classList.add("gClick");
@@ -12,5 +12,5 @@ function gClick(gEvent){
 }
 document.querySelector("html").onclick = function(gEvent){
 	gClick(gEvent);
-// 	console.log(gEvent);
+	console.log(gEvent);
 }
