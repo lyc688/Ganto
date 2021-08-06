@@ -84,9 +84,18 @@ img{
 	--mark: light;
 }
 #active{
-	border-top: 1px solid var(--active);
-	border-bottom: 1px solid var(--active);
 	color: var(--active);
+	position: relative;
+}
+a#active::before {
+    content: "";
+    display: inline-block;
+    width: 75%;
+    height: 4px;
+    background: red;
+    position: absolute;
+    bottom: -5px;
+    border-radius: 2px;
 }
 ::selection{
 	color: var(--selection-color);
@@ -159,8 +168,6 @@ header nav{
 .function a{
 	text-transform: capitalize;
 	margin-right: 10px;
-	border-top: 1px solid var(--bg);
-	border-bottom: 1px solid var(--bg);
 	text-decoration: none;
 }
 .function a:hover{
