@@ -86,6 +86,7 @@ img{
 .active{
 	border-top: 1px solid var(--active);
 	border-bottom: 1px solid var(--active);
+	color: var(--active);
 }
 ::selection{
 	color: var(--selection-color);
