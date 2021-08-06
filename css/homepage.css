@@ -88,14 +88,15 @@ img{
 	position: relative;
 }
 a#active::before {
-    content: "";
-    display: inline-block;
-    width: 75%;
-    height: 4px;
-    background: red;
-    position: absolute;
-    bottom: -5px;
-    border-radius: 2px;
+	content: "";
+	display: inline-block;
+	width: 60%;
+	height: 3px;
+	background-color: var(--color);
+	position: absolute;
+	left: 20%;
+	bottom: -4px;
+	border-radius: 1.5px;
 }
 ::selection{
 	color: var(--selection-color);
