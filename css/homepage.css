@@ -159,9 +159,12 @@ header nav{
 .function a{
 	text-transform: capitalize;
 	margin-right: 10px;
-	border-top: 1px solid var(--selection-color);
-	border-bottom: 1px solid var(--selection-color);
+	border-top: 1px solid var(--bg);
+	border-bottom: 1px solid var(--bg);
 	text-decoration: none;
+}
+.function a:hover{
+	color: var(--color);
 }
 .function a:nth-child(1){
 	margin-left: 0;
