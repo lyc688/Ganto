@@ -84,7 +84,8 @@ img{
 	--mark: light;
 }
 .active{
-	color: var(--active);
+	border-top: 1px solid var(--active);
+	border-bottom: 1px solid var(--active);
 }
 ::selection{
 	color: var(--selection-color);
@@ -157,6 +158,9 @@ header nav{
 .function a{
 	text-transform: capitalize;
 	margin-right: 10px;
+	border-top: 1px solid var(--selection-color);
+	border-bottom: 1px solid var(--selection-color);
+	text-decoration: none;
 }
 .function a:nth-child(1){
 	margin-left: 0;
