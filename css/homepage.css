@@ -18,8 +18,8 @@ img{
 	:root{
 /* 		background: #35363A;
 		--bg: #35363A; */
-		background: #2B2B2B;
-		--bg: #2B2B2B;
+		background: #22272e;
+		--bg: #22272e;
 		color: white;
 		--color: white;
 		--active: white;
@@ -55,9 +55,9 @@ img{
 [data-theme=dark]{
 /* 	background: #35363A;
 	--bg: #35363A; */
-	background: #2B2B2B;
+	background: #22272e;
 /* 	--bg: #0d1117; */
-	--bg: #2B2B2B;
+	--bg: #22272e;
 	color: white;
 	--color: white;
 	--active: white;
