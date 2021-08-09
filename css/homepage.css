@@ -388,7 +388,7 @@ span.vnick,a.vnick {
 .theme-btn .btn img{
 	display: block;
 	width: 100%;
-	border-bottom: 1px solid var(--color);
+	border-bottom: 4px solid var(--color);
 }
 .theme-btn .btn span{
 	display: block;
