@@ -96,7 +96,8 @@ a#active::before {
 	display: inline-block;
 	width: 80%;
 	height: 5px;
-	background-color: var(--itemBackgroundColor);
+/* 	background-color: var(--itemBackgroundColor); */
+	background-color: var(--color);
 	position: absolute;
 	left: 10%;
 	bottom: -5px;
